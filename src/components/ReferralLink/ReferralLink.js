@@ -2,7 +2,7 @@ import React from 'react';
 import './ReferralLink.css';
 
 const ReferralLink = () => {
-    const referralLink = "https://yourgame.com/referral-link"; // Это значение будет получено из API
+    const referralLink = "https://sharecoin.com/referral-link"; // Это значение будет получено из API
 
     const copyToClipboard = async () => {
         try {

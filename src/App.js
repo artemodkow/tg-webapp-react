@@ -1,22 +1,27 @@
-import React, {useEffect} from 'react';
+// App.js
+
+import React, { useState } from 'react';
+import LoginPage from './components/LoginPage/LoginPage';
 import MainPage from './components/MainPage/MainPage';
-import './App.css';
-const tg = window.Telegram.WebApp;
+import './App.css'; // Подключите основные стили приложения, если они у вас есть
 
-function App() {
+const App = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    useEffect(() => {
-        tg.ready()
-    }, []);
+    const handleLogin = (referralLink) => {
+        console.log('Реферальная ссылка:', referralLink); // Обработка реферальной ссылки
+        setIsLoggedIn(true); // Переключение состояния входа
+    };
 
-    const onClose = () => {
-        tg.close()
-    }
     return (
         <div className="App">
-            <MainPage />
+            {!isLoggedIn ? (
+                <LoginPage onLogin={handleLogin} />
+            ) : (
+                <MainPage />
+            )}
         </div>
     );
-}
+};
 
 export default App;

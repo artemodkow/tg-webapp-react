@@ -1,17 +1,20 @@
-import React from 'react';
-import UserBalance from '../UserBalance/UserBalance';
-import ReferralLink from '../ReferralLink/ReferralLink';
-import UserList from '../UserList/UserList';
-import './MainPage.css';
+import React, { useState } from 'react';
+import LoginPage from './components/LoginPage/LoginPage';
+import MainPage from './components/MainPage/MainPage';
 
-const MainPage = () => {
+const App = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    const handleLogin = (referralLink) => {
+        console.log('Реферальная ссылка:', referralLink);
+        setIsLoggedIn(true);
+    };
+
     return (
-        <div className="MainPage">
-            <UserBalance />
-            <ReferralLink />
-            <UserList />
+        <div className="App">
+            {!isLoggedIn ? <LoginPage onLogin={handleLogin} /> : <MainPage />}
         </div>
     );
 };
 
-export default MainPage;
+export default App;
