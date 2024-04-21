@@ -4,6 +4,7 @@ import MainPage from '../MainPage/MainPage';
 
 const LoginPage = () => {
     const [referralLink, setReferralLink] = useState('');
+    const [isPaymentVisible, setIsPaymentVisible] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -27,9 +28,9 @@ const LoginPage = () => {
         setIsLoading(false);
     };
 
-    const handleSubmit = (event) => {
+    const handleReferralSubmit = (event) => {
         event.preventDefault();
-        handlePayment();
+        setIsPaymentVisible(true); // Показать форму оплаты
     };
 
     if (isLoggedIn) {
@@ -39,17 +40,24 @@ const LoginPage = () => {
     return (
         <div className="login-page">
             <h1>ShareCoin</h1>
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    placeholder="Вставьте реферальную ссылку (если имеется)"
-                    value={referralLink}
-                    onChange={(e) => setReferralLink(e.target.value)}
-                />
-                <button type="submit" disabled={isLoading}>
-                    {isLoading ? 'Оплата...' : 'Продолжить'}
-                </button>
-            </form>
+            {!isPaymentVisible ? (
+                <form onSubmit={handleReferralSubmit}>
+                    <input
+                        type="text"
+                        placeholder="Вставьте реферальную ссылку (если имеется)"
+                        value={referralLink}
+                        onChange={(e) => setReferralLink(e.target.value)}
+                    />
+                    <button type="submit">Продолжить</button>
+                </form>
+            ) : (
+                <form onSubmit={handlePayment}>
+                    <p>Оплата для доступа к игре</p>
+                    <button type="submit" disabled={isLoading}>
+                        {isLoading ? 'Оплата...' : 'Оплатить и войти'}
+                    </button>
+                </form>
+            )}
             {error && <p>{error}</p>}
         </div>
     );
