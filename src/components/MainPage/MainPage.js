@@ -1,21 +1,13 @@
-import React, { useState } from 'react';
-import LoginPage from './components/LoginPage/LoginPage';
-import MainPage from './components/MainPage/MainPage';
+// components/MainPage/MainPage.js
+import React from 'react';
 
-const App = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-    const handleLogin = (referralLink) => {
-        console.log('Реферальная ссылка:', referralLink);
-        setIsLoggedIn(true);
-    };
-
+const MainPage = () => {
     return (
-        <div className="App">
-            {!isLoggedIn ? <LoginPage onLogin={handleLogin} /> : <MainPage />}
+        <div>
+            <h1>Добро пожаловать в ShareCoin!</h1>
+            {/* Добавьте дополнительное содержание или компоненты */}
         </div>
     );
 };
 
-export default App;
-
+export default MainPage;
