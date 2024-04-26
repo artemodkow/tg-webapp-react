@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Players.css';
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
-import Navigation from '../Navigation/Navigation'; // Если у вас есть общий компонент навигации
 
 const Players = () => {
     const [currentPage, setCurrentPage] = useState('players');
