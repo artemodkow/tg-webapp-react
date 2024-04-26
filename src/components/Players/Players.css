@@ -1,15 +1,15 @@
 /* src/components/Players/Players.css */
 
 .players-container {
-    background-color: #121212; /* Фон всего контейнера */
-    color: #ffffff; /* Цвет текста */
-    font-family: 'Arial', sans-serif; /* Шрифт */
-    min-height: 100vh; /* Минимальная высота страницы */
-    width: 100%; /* Ширина */
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 60px; /* Дополнительный отступ внизу для навигации */
+    padding-bottom: 60px;
 }
 
 .user-info {
@@ -22,83 +22,108 @@
 }
 
 .user-avatar {
-    width: 80px; /* Размер аватарки */
+    width: 80px;
     height: 80px;
-    border-radius: 50%; /* Круглая форма */
+    border-radius: 50%;
     margin-bottom: 10px;
-    background-color: #ccc; /* Цвет фона для аватарки */
-    border: 3px solid #ffffff; /* Белая обводка для аватара */
-    object-fit: cover; /* Обеспечиваем, чтобы изображение заполняло контейнер */
+    background-color: #ccc;
+    border: 3px solid #ffffff;
+    object-fit: cover;
 }
 
 .user-name {
     margin: 5px 0;
-    font-size: 1.4em; /* Размер шрифта */
-    font-weight: bold; /* Жирное начертание */
+    font-size: 1.4em;
+    font-weight: bold;
 }
 
 .user-rating {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Отступ после блока рейтинга */
+    margin-bottom: 20px;
 }
 
 .rating-icon {
-    width: 24px; /* Размер иконки рейтинга */
+    width: 24px;
     height: 24px;
     margin-right: 10px;
 }
 
 .big-balance {
-    font-size: 2.4em; /* Размер шрифта для баланса */
-    font-weight: bold; /* Жирный текст */
+    font-size: 2.4em;
+    font-weight: bold;
     display: flex;
-    align-items: center; /* Центрирование текста с иконкой */
+    align-items: center;
 }
 
 .coin-icon {
-    width: 30px; /* Размер иконки */
+    width: 30px;
     height: 30px;
     margin-right: 10px;
 }
 
-.referral-link {
-    text-align: center;
-    font-size: 0.8em; /* Меньший размер шрифта для подсказки */
-    margin-bottom: 20px; /* Отступ снизу */
+.referral-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.referral-text {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-right: 15px;
+}
+
+.share-button {
+    background-color: #2aabd2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-button:hover {
+    background-color: #2295b6;
 }
 
 .employees-container {
-    width: 90%; /* Ширина контейнера работников */
+    width: 90%;
     margin: 20px 0;
 }
 
 .employees-header {
-    font-size: 1.2em; /* Размер шрифта для заголовка */
-    margin-bottom: 10px; /* Отступ снизу для заголовка */
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .employee-item {
-    background-color: #333; /* Темный фон для элемента списка */
-    border-radius: 10px; /* Скругленные углы */
-    padding: 10px; /* Внутренний отступ */
-    margin-bottom: 10px; /* Отступ между элементами списка */
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .employee-avatar {
-    width: 40px; /* Размер аватарки работника */
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #ccc;
     margin-right: 10px;
-    object-fit: cover; /* Обеспечиваем, чтобы изображение заполняло контейнер */
+    object-fit: cover;
 }
 
 .employee-name {
-    font-size: 1em; /* Размер шрифта */
+    font-size: 1em;
 }
 
 .navigation {
@@ -106,17 +131,17 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #333; /* Фон навигационной панели */
+    background-color: #333;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    box-shadow: 0px -2px 10px rgba(0,0,0,0.5); /* Тень для панели */
+    box-shadow: 0px -2px 10px rgba(0,0,0,0.5);
 }
 
 .navigation button {
     background: none;
     border: none;
-    color: #fff; /* Цвет текста кнопок */
+    color: #fff;
     padding: 10px;
     font-size: 1em;
     cursor: pointer;
@@ -124,7 +149,7 @@
 }
 
 .navigation button.active {
-    border-bottom: 2px solid #ffd700; /* Подчеркивание для активной кнопки */
+    border-bottom: 2px solid #ffd700;
 }
 
 .navigation button:hover {

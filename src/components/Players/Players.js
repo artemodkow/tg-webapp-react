@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
 import './Players.css';
+import ShareButton from './ShareButton'; // Путь до ShareButton.js может отличаться
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
 
 const Players = () => {
     const [currentPage, setCurrentPage] = useState('players');
-    // Предположим, что данные о работниках и пользователе загружаются откуда-то
     const userData = {
         avatar: "path_to_avatar",
         name: "Thomas Vien",
         coins: 56500,
         rating: 10220,
-        // другие данные пользователя...
+        // Предположим, что вы здесь вставляете реальные данные пользователя...
     };
     const employees = [
-        // Загруженные данные о работниках
+        // Предположим, что вы здесь вставляете реальные данные работников...
     ];
 
     const renderContent = () => {
         switch (currentPage) {
             case 'players':
-                // Возвращаем JSX для списка работников, который должен быть загружен
                 return (
                     <>
                         <div className="user-info">
@@ -34,17 +33,16 @@ const Players = () => {
                                 <img src="path_to_coin_icon" alt="Coin Icon" className="coin-icon"/>
                                 {userData.coins}
                             </div>
-                            <div className="referral-link">Если другие игроки перейдут по вашей ссылке...</div>
+                        </div>
+                        <div className="referral-container">
+                            <div className="referral-text">
+                                Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
+                            </div>
+                            <ShareButton url="https://your-referral-link.com" />
                         </div>
                         <div className="employees-container">
                             <div className="employees-header">Мои работники: {employees.length}</div>
-                            {employees.map(employee => (
-                                <div key={employee.id} className="employee-item">
-                                    <img src={employee.avatar} alt={employee.name} className="employee-avatar"/>
-                                    <div className="employee-name">{employee.name}</div>
-                                    <div>{employee.income} /min</div>
-                                </div>
-                            ))}
+                            {/* Здесь должен быть ваш код для отображения списка работников */}
                         </div>
                     </>
                 );
@@ -56,6 +54,7 @@ const Players = () => {
                 return null;
         }
     };
+
     return (
         <div className="players-container">
             <div className="navigation">
@@ -66,7 +65,6 @@ const Players = () => {
             {renderContent()}
         </div>
     );
-
 };
 
 export default Players;
