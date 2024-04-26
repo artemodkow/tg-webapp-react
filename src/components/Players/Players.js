@@ -6,11 +6,10 @@ import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
 
 const Players = () => {
-    const { first_name, last_name, username } =tg.initDataUnsafe.user;
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
         avatar: "path_to_avatar",
-        name: username,
+        name: tg.initDataUnsafe.user.username,
         coins: 56500,
         rating: 10220,
         // Предположим, что вы здесь вставляете реальные данные пользователя...
