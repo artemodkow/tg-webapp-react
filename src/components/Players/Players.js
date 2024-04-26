@@ -3,12 +3,14 @@ import './Players.css';
 import ShareButton from './ShareButton'; // Путь до ShareButton.js может отличаться
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
+import {usetelegram} from "../hooks/usetelegram";
 
 const Players = () => {
+    const {tg, user} = usetelegram();
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
         avatar: "path_to_avatar",
-        name: name,
+        name: user?.username,
         coins: 56500,
         rating: 10220,
         // Предположим, что вы здесь вставляете реальные данные пользователя...
