@@ -57,13 +57,6 @@ const Players = () => {
                 return null;
         }
     };
-
-    return (
-        <div className="players-container">
-            {renderContent()}
-            <Navigation currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        </div>
-    );
 };
 
 export default Players;
