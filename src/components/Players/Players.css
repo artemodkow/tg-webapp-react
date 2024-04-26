@@ -1,44 +1,83 @@
-/* Стиль для баланса и рейтинга, отображаемого большими цифрами */
+/* src/components/Players/Players.css */
+
+.players-container {
+    background-color: #121212; /* Фон всего контейнера */
+    color: #ffffff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    min-height: 100vh; /* Минимальная высота страницы */
+    width: 100%; /* Ширина */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px; /* Дополнительный отступ внизу для навигации */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.user-avatar {
+    width: 80px; /* Размер аватарки */
+    height: 80px;
+    border-radius: 50%; /* Круглая форма */
+    margin-bottom: 10px;
+    background-color: #ccc; /* Цвет фона для аватарки */
+    border: 3px solid #ffffff; /* Белая обводка для аватара */
+    object-fit: cover; /* Обеспечиваем, чтобы изображение заполняло контейнер */
+}
+
+.user-name {
+    margin: 5px 0;
+    font-size: 1.4em; /* Размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+}
+
+.user-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Отступ после блока рейтинга */
+}
+
+.rating-icon {
+    width: 24px; /* Размер иконки рейтинга */
+    height: 24px;
+    margin-right: 10px;
+}
+
 .big-balance {
     font-size: 2.4em; /* Размер шрифта для баланса */
     font-weight: bold; /* Жирный текст */
-    margin: 10px 0; /* Отступ сверху и снизу */
+    display: flex;
+    align-items: center; /* Центрирование текста с иконкой */
 }
 
-/* Стиль для иконки монеты рядом с балансом */
 .coin-icon {
     width: 30px; /* Размер иконки */
     height: 30px;
     margin-right: 10px;
 }
 
-/* Общий стиль для блока с рейтингом и иконкой */
-.rating-block {
-    display: flex;
-    align-items: center;
-    margin: 10px 0; /* Отступ сверху и снизу */
-}
-
-/* Стиль для текста подсказки о реферальной ссылке */
-.referral-text {
+.referral-link {
     text-align: center;
     font-size: 0.8em; /* Меньший размер шрифта для подсказки */
     margin-bottom: 20px; /* Отступ снизу */
 }
 
-/* Стили для контейнера с работниками */
 .employees-container {
-    width: 100%; /* Ширина на всю доступную область */
-    margin: 20px 0; /* Отступ сверху и снизу */
+    width: 90%; /* Ширина контейнера работников */
+    margin: 20px 0;
 }
 
-/* Заголовок для секции работников */
 .employees-header {
-    font-size: 1.4em; /* Размер шрифта заголовка */
-    margin-bottom: 10px; /* Отступ снизу у заголовка */
+    font-size: 1.2em; /* Размер шрифта для заголовка */
+    margin-bottom: 10px; /* Отступ снизу для заголовка */
 }
 
-/* Стиль для элемента списка работников */
 .employee-item {
     background-color: #333; /* Темный фон для элемента списка */
     border-radius: 10px; /* Скругленные углы */
@@ -49,10 +88,61 @@
     justify-content: space-between;
 }
 
-/* Стиль для названия работника */
-.employee-name {
-    font-size: 1em; /* Размер шрифта */
-    color: #fff; /* Цвет текста */
+.employee-avatar {
+    width: 40px; /* Размер аватарки работника */
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+    object-fit: cover; /* Обеспечиваем, чтобы изображение заполняло контейнер */
 }
 
-/* Дополнительные стили по мере необходимости */
+.employee-name {
+    font-size: 1em; /* Размер шрифта */
+}
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Фон навигационной панели */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0px -2px 10px rgba(0,0,0,0.5); /* Тень для панели */
+}
+
+.navigation button {
+    background: none;
+    border: none;
+    color: #fff; /* Цвет текста кнопок */
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+}
+
+.navigation button.active {
+    border-bottom: 2px solid #ffd700; /* Подчеркивание для активной кнопки */
+}
+
+.navigation button:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .user-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .employee-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navigation button {
+        font-size: 0.8em;
+    }
+}
