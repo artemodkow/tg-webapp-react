@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import React, { useEffect } from 'react';
+const { useEffect, useState } = React
 import Players from './components/Players/Players';
 import './App.css';
 
