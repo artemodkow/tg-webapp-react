@@ -8,7 +8,7 @@ const ShareButton = ({ url }) => {
             });
         } else {
             // Fallback для браузеров без navigator.share
-            window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}`, '_blank');
+            window.open("https://telegram.org/js/telegram-widget.js?22", '_blank');
         }
     };
 
