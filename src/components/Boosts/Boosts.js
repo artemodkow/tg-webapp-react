@@ -29,13 +29,6 @@ const Boosts = () => {
                 <button>5x Купить за N ₽ / 1 час</button>
                 <button>10x Купить за N ₽ / 1 час</button>
             </div>
-
-            {/* Навигация, если она используется на нескольких страницах, вынесите её в отдельный компонент */}
-            <nav className="boosts-navigation">
-                <button>Players</button>
-                <button className="active">Boosts</button>
-                <button>Trade</button>
-            </nav>
         </div>
     );
 };
