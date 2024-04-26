@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Players.css';
-let tg = window.Telegram.WebApp;
 import ShareButton from './ShareButton'; // Путь до ShareButton.js может отличаться
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
@@ -9,12 +8,11 @@ const Players = () => {
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
         avatar: "path_to_avatar",
-        name: tg.initDataUnsafe.user.username,
+        name: name,
         coins: 56500,
         rating: 10220,
         // Предположим, что вы здесь вставляете реальные данные пользователя...
     };
-
     const employees = [
         // Предположим, что вы здесь вставляете реальные данные работников...
     ];
