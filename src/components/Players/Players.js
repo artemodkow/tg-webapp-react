@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Players.css';
-//import ShareButton from './ShareButton';
-// Путь до ShareButton.js может отличаться
-import { Telegram } from 'react-social-sharing';
+import ShareButton from './ShareButton'; // Путь до ShareButton.js может отличаться
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
 
@@ -36,11 +34,11 @@ const Players = () => {
                                 {userData.coins}
                             </div>
                         </div>
-                        <div className="share-button-container">
+                        <div className="referral-container">
                             <div className="referral-text">
                                 Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
                             </div>
-                            <Telegram solid medium link={shareUrl} message="Share on Telegram"/>
+                            <ShareButton url="https://your-referral-link.com" />
                         </div>
                         <div className="employees-container">
                             <div className="employees-header">Мои работники: {employees.length}</div>
@@ -49,9 +47,9 @@ const Players = () => {
                     </>
                 );
             case 'boosts':
-                return <Boosts/>;
+                return <Boosts />;
             case 'trade':
-                return <Trade/>;
+                return <Trade />;
             default:
                 return null;
         }
@@ -60,7 +58,7 @@ const Players = () => {
     return (
         <div className="players-container">
             <div className="navigation">
-            <button onClick={() => setCurrentPage('players')}>Players</button>
+                <button onClick={() => setCurrentPage('players')}>Players</button>
                 <button onClick={() => setCurrentPage('boosts')}>Boosts</button>
                 <button onClick={() => setCurrentPage('trade')}>Trade</button>
             </div>
