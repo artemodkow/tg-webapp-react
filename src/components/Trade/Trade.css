@@ -1,0 +1,78 @@
+.trade-container {
+    padding: 20px;
+    background-color: #1c1c1e;
+    color: #ffffff;
+    min-height: 100vh; /* Убедитесь, что высота содержит весь экран */
+}
+
+.trade-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.player-list {
+    list-style-type: none; /* Убираем маркеры списка */
+    overflow-y: auto; /* Добавляем возможность прокрутки */
+    max-height: 70vh; /* Ограничиваем максимальную высоту списка */
+    padding: 0; /* Сбрасываем отступы */
+}
+
+.player-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #2c2c2e;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Расстояние между элементами списка */
+}
+
+.player-avatar {
+    width: 50px; /* Размер аватара */
+    height: 50px;
+    border-radius: 50%; /* Делаем аватар круглым */
+}
+
+.player-info {
+    margin-left: 10px;
+    flex-grow: 1; /* Растягиваем, чтобы использовать доступное пространство */
+}
+
+.player-name {
+    font-size: 16px;
+    margin-bottom: 5px; /* Расстояние между именем и статусом */
+}
+
+.player-status {
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+.player-price {
+    font-size: 16px;
+    font-weight: bold; /* Сделать шрифт жирным */
+}
+
+/* Стили для мобильных устройств и адаптивность */
+@media (max-width: 768px) {
+    .trade-container {
+        padding: 10px;
+    }
+
+    .trade-header {
+        font-size: 20px;
+    }
+
+    .player-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .player-name {
+        font-size: 14px;
+    }
+
+    .player-price {
+        font-size: 14px;
+    }
+}
