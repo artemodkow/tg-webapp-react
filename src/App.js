@@ -1,5 +1,5 @@
 // App.js
-import React from 'react';
+import React, {useEffect} from 'react';
 import Players from './components/Players/Players';
 import './App.css';
 
