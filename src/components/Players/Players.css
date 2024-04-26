@@ -1,0 +1,130 @@
+/* src/components/Players/Players.css */
+
+.players-container {
+    background-color: #121212; /* Фон всего контейнера */
+    color: #ffffff; /* Цвет текста */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    min-height: 100vh; /* Минимальная высота страницы */
+    width: 100%; /* Ширина */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для верхней части с информацией о пользователе */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Стиль для аватарки пользователя */
+.user-avatar {
+    width: 80px; /* Размер аватарки */
+    height: 80px;
+    border-radius: 50%; /* Круглая форма */
+    margin-bottom: 10px;
+    background-color: #ccc; /* Цвет фона для аватарки */
+}
+
+/* Стиль для имени пользователя и баланса */
+.user-name,
+.user-balance {
+    margin: 5px 0;
+    font-size: 1.2em; /* Размер шрифта */
+}
+
+/* Стиль для рейтинга пользователя */
+.user-rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-icon {
+    width: 24px; /* Размер иконки рейтинга */
+    height: 24px;
+    margin-right: 5px;
+}
+
+/* Стили для секции реферальной ссылки */
+.referral-link {
+    margin: 20px 0;
+}
+
+/* Стиль для списка работников */
+.employee-list {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.employee-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.employee-avatar {
+    width: 50px; /* Размер аватарки работника */
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.employee-name {
+    font-size: 1em;
+}
+
+/* Стиль для нижней навигации */
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.navigation button {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+}
+
+.navigation button.active {
+    border-bottom: 2px solid #fff; /* Подчеркивание для активной кнопки */
+}
+
+.navigation button:hover {
+    opacity: 0.7;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .user-info {
+        padding: 10px;
+    }
+
+    .user-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .employee-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navigation button {
+        font-size: 0.8em;
+    }
+}
