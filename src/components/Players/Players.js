@@ -9,7 +9,7 @@ const Players = () => {
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
         avatar: "path_to_avatar",
-        name: tg.initDataUnsafe.user,
+        name: tg.initDataUnsafe.user.name,
         coins: 56500,
         rating: 10220,
         // Предположим, что вы здесь вставляете реальные данные пользователя...
