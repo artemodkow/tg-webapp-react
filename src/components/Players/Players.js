@@ -9,8 +9,8 @@ const Players = () => {
     const {tg, user} = usetelegram();
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
-        avatar: user?.avatar,
-        name: user?.photo_url,
+        avatar: user?.photo_url,
+        name: user?.username,
         coins: 56500,
         rating: 10220,
         // Предположим, что вы здесь вставляете реальные данные пользователя...
