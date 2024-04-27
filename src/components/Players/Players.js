@@ -25,7 +25,7 @@ const Players = () => {
                 return (
                     <>
                         <div className="user-info">
-                            <img src={user?.photo_url} alt="User Avatar" className="user-avatar"/>
+                            <img src={user?.photo_url} className="user-avatar"/>
                             <div className="user-name">{userData.name}</div>
                             <div className="user-rating">
                                 <img src={process.env.PUBLIC_URL + "/icons/Кубок.png"} alt="Rating Icon" className="rating-icon"/>
