@@ -9,7 +9,7 @@ const Players = () => {
     const {tg, user} = usetelegram();
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
-        avatar: "path_to_avatar",
+        avatar: user?.avatar,
         name: user?.username,
         coins: 56500,
         rating: 10220,
