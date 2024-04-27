@@ -10,7 +10,7 @@ const Players = () => {
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
         avatar: user?.avatar,
-        name: user?.username,
+        name: user?.photo_url,
         coins: 56500,
         rating: 10220,
         // Предположим, что вы здесь вставляете реальные данные пользователя...
@@ -25,7 +25,7 @@ const Players = () => {
                 return (
                     <>
                         <div className="user-info">
-                            <img src={user?.avatar} alt="User Avatar" className="user-avatar"/>
+                            <img src={user?.photo_url} alt="User Avatar" className="user-avatar"/>
                             <div className="user-name">{userData.name}</div>
                             <div className="user-rating">
                                 <img src={process.env.PUBLIC_URL + "/icons/Кубок.png"} alt="Rating Icon" className="rating-icon"/>
