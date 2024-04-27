@@ -9,7 +9,7 @@ const Players = () => {
     const {tg, user, avatar} = usetelegram();
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
-        avatar: avatar,
+       /* avatar: avatar,*/
         name: user?.username,
         coins: 56500,
         rating: 10220,
@@ -25,20 +25,33 @@ const Players = () => {
                 return (
                     <>
                         <div className="user-info">
-                            <img src={user?.photo_url} className="user-avatar"/>
+                            {/*<img src={user?.photo_url} className="user-avatar"/>*/}
+
+                            {/*никнейм*/}
                             <div className="user-name">{userData.name}</div>
+                            {/*монеты у ника*/}
+                            <div className="user-coins">
+                                <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin" className="coin-icon"/>
+                                {userData.coins}
+                            </div>
+                            {/*рейтинг*/}
                             <div className="user-rating">
-                                <img src={process.env.PUBLIC_URL + "/icons/Кубок.png"} alt="Rating Icon" className="rating-icon"/>
+                                <img src={process.env.PUBLIC_URL + "/icons/Кубок.png"} alt="Rating Icon"
+                                     className="rating-icon"/>
                                 <div>{userData.rating}</div>
                             </div>
-                            <div className="big-balance">
-                                <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin Icon" className="coin-icon"/>
-                                {userData.coins}
+                            {/*баланс посередине*/}
+                            <div className="big-balance-container">
+                                <div className="big-balance">
+                                    <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin Icon"
+                                         className="coin-icon"/>
+                                    {userData.coins}
+                                </div>
                             </div>
                         </div>
                         <div className="referral-container">
                             <div className="referral-text">
-                                Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
+                            Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
                             </div>
                             <ShareButton url="https://your-referral-link.com" />
                         </div>
