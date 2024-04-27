@@ -6,10 +6,10 @@ import Trade from '../Trade/Trade';
 import {usetelegram} from "../hooks/usetelegram";
 
 const Players = () => {
-    const {tg, user} = usetelegram();
+    const {tg, user, avatar} = usetelegram();
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
-        avatar: user?.photo_url,
+        avatar: avatar,
         name: user?.username,
         coins: 56500,
         rating: 10220,
