@@ -25,14 +25,14 @@ const Players = () => {
                 return (
                     <>
                         <div className="user-info">
-                            <img src={userData.avatar} alt="User Avatar" className="user-avatar"/>
+                            <img src={user?.avatar} alt="User Avatar" className="user-avatar"/>
                             <div className="user-name">{userData.name}</div>
                             <div className="user-rating">
-                                <img src="path_to_rating_icon" alt="Rating Icon" className="rating-icon"/>
+                                <img src={process.env.PUBLIC_URL + "/icons/Кубок.png"} alt="Rating Icon" className="rating-icon"/>
                                 <div>{userData.rating}</div>
                             </div>
                             <div className="big-balance">
-                                <img src="path_to_coin_icon" alt="Coin Icon" className="coin-icon"/>
+                                <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin Icon" className="coin-icon"/>
                                 {userData.coins}
                             </div>
                         </div>
