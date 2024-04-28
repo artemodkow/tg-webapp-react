@@ -2,6 +2,7 @@
     background-color: #121212;
     color: #ffffff;
     min-height: 100vh;
+    font-family: 'SF Pro Display', sans-serif;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -60,12 +61,14 @@
     display: flex;
     color: orange;
     align-items: center;
+    cursor: pointer;
     margin-left: auto;
 }
 
 .rating-icon {
     width: 24px;
     height: 24px;
+    cursor: pointer;
     margin-right: 5px;
     margin-left: 10px;
 }

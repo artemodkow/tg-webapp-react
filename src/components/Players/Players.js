@@ -2,19 +2,27 @@ import React, { useState} from 'react';
 import './Players.css';
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
-import {usetelegram} from "../../../node_modules/hooks/usetelegram";
+import Rating from "../Rating/Rating";
+/*import { usetelegram } from '../hooks/usetelegram';*/
+
 
 const Players = () => {
-    const {username} = usetelegram();
+    /*const {username} = usetelegram();*/
     const [currentPage, setCurrentPage] = useState('players');
+
+    const showPlayers = () => {
+        setCurrentPage('players');
+    };
+
     const userData = {
        /* avatar: avatar,*/
-        user: username || "username",
-        coins: 56500,
+        name: "username",
+        coins: "130,412",
         rating: "Rating " + 10220 + "th",
         count_slaves: 0
         // Предположим, что вы здесь вставляете реальные данные пользователя...
     };
+
     const employees = [
         // Предположим, что вы здесь вставляете реальные данные работников...
     ];
@@ -59,11 +67,15 @@ const Players = () => {
                                      className="coin-icon-coins"/>
                             </div>
                             {/*рейтинг*/}
-                            <div className="user-rating">
-                                <div>{userData.rating}</div>
-                                <img src={process.env.PUBLIC_URL + "/icons/Кубок.png"} alt="Rating Icon"
-                                     className="rating-icon"/>
-                            </div>
+                        {/* рейтинг */}
+                        <div className="user-rating" onClick={() => setCurrentPage('rating')}>
+                            <div>{userData.rating}</div>
+                            <img
+                                src={process.env.PUBLIC_URL + "/icons/Кубок.png"}
+                                alt="Rating Icon"
+                                className="rating-icon"
+                            />
+                        </div>
                         </div>
 
                         <div className="big-balance-container">
@@ -99,20 +111,30 @@ const Players = () => {
                 return <Boosts/>;
             case 'trade':
                 return <Trade/>;
+            case 'rating':
+                return <Rating/>
             default:
                 return null;
         }
     };
     return (
         <div className="players-container">
-            <div className="navigation">
-                <button onClick={() => setCurrentPage('players')}>Players</button>
-                <button onClick={() => setCurrentPage('boosts')}>Boosts</button>
-                <button onClick={() => setCurrentPage('trade')}>Trade</button>
-            </div>
-            {renderContent()}
+            {/* Если текущая страница - 'rating', показать только компонент Rating */}
+            {currentPage === 'rating' && <Rating onBackClick={() => setCurrentPage('players')} />}
+
+            {/* Показать навигационные кнопки только если текущая страница не 'rating' */}
+            {currentPage !== 'rating' && (
+                <div className="navigation">
+                    <button onClick={() => setCurrentPage('players')}>Players</button>
+                    <button onClick={() => setCurrentPage('boosts')}>Boosts</button>
+                    <button onClick={() => setCurrentPage('trade')}>Trade</button>
+                </div>
+            )}
+            {/* Остальное содержимое, например, вывод компонента с игроками */}
+            {currentPage !== 'rating' && renderContent()}
         </div>
     );
+
 };
 
 export default Players;

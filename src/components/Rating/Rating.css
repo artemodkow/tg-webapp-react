@@ -1,0 +1,78 @@
+.rating-container {
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый текст */
+    min-height: 100vh; /* Минимальная высота, чтобы занять весь экран */
+    padding: 20px; /* Отступы для внутреннего содержимого */
+}
+
+.rating-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; /* Отступ сверху и снизу для шапки */
+}
+
+.back-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.players-count {
+    font-size: 1em;
+}
+
+.time-left {
+    background-color: #333; /* Серый фон */
+    color: #fff;
+    padding: 5px 10px; /* Внутренние отступы */
+    border-radius: 20px; /* Закругление углов */
+}
+
+.cup-section {
+    background: linear-gradient(to bottom, #ffcc00, #ff9900); /* Градиент для фона с кубком */
+    text-align: center; /* Центрирование изображения кубка */
+    padding: 20px 0; /* Отступ для секции с кубком */
+}
+
+.rating-table {
+    margin-top: 20px; /* Отступ сверху для таблицы */
+}
+
+.player-item {
+    background-color: #333; /* Светлее чем основной фон */
+    margin-bottom: 10px; /* Отступ между элементами списка */
+    padding: 10px; /* Внутренние отступы элементов списка */
+    border-radius: 10px; /* Закругление углов элементов списка */
+    display: flex;
+    align-items: center; /* Вертикальное центрирование содержимого */
+}
+
+.player-item.current-user {
+    background-color: #444; /* Выделение текущего пользователя */
+}
+
+.player-ranking {
+    margin-right: 10px; /* Отступ справа от ранга */
+    font-weight: bold;
+}
+
+.player-name {
+    flex-grow: 1; /* Заполнение доступного пространства */
+}
+
+.player-coins {
+    font-weight: bold;
+}
+
+.current-user-info {
+    position: fixed; /* Фиксированное положение снизу */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
