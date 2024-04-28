@@ -16,7 +16,7 @@
     align-items: center;
     margin-top: 20px;
     width: 95%;
-    padding: 20px;
+    padding: 15px;
     background-color: #333; /* Темный фон */
     border-radius: 25px; /* Закругленные углы */
     margin-bottom: 20px; /* Отступ снизу */
@@ -33,14 +33,17 @@
 }*/
 
 .user-name {
-    margin: 5px 0;
+    display: flex;
+    align-items: flex-start;
     font-size: 1em;
     font-weight: bold;
+    margin-bottom: 2px;
 }
 .user-name-balance {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column; /* Ставим дочерние элементы в столбик */
+    align-items: center; /* Центрируем дочерние элементы по горизонтали */
+    margin-right: 30px;
 }
 .user-coins {
     display: flex;
@@ -53,18 +56,21 @@
 .coin-icon-coins {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
     margin-left: 10px;
 }
 
 .user-rating {
     display: flex;
     color: orange;
-    width: 40px;
-    height: 40px;
     align-items: center;
     cursor: pointer;
     margin-left: auto;
+}
+.text-rating{
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 .rating-icon {
@@ -242,8 +248,7 @@
     height: 50px;
 }
 .referral-link-button {
-    align-self: center; /* Центрируем кнопку внутри контейнера */
-    margin-top: -20px; /* Выравнивание кнопки слева */
+    margin-top: -30px; /* Выравнивание кнопки слева */
     margin-bottom: 5px; /* Расстояние до следующего элемента */
 }
 

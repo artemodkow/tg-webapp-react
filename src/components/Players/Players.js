@@ -55,27 +55,30 @@ const Players = () => {
             case 'players':
                 return (
                     <>
-                    <div className="user-info">
+                        <div className="user-info">
                             {/*<img src={user?.photo_url} className="user-avatar"/>*/}
 
                             {/*никнейм*/}
-                            <div className="user-name">{userData.name}</div>
-                            {/*монеты у ника*/}
                             <div className="user-name-balance">
-                                {userData.coins}
-                                <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
-                                     className="coin-icon-coins"/>
+                                <div className="user-name">{userData.name}</div>
+                                <div className="user-coins">
+                                    {userData.coins}
+                                    <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
+                                         className="coin-icon-coins"/>
+                                </div>
                             </div>
                             {/*рейтинг*/}
-                        {/* рейтинг */}
-                        <div className="user-rating" onClick={() => setCurrentPage('rating')}>
-                            <div>{userData.rating}</div>
-                            <img
-                                src={process.env.PUBLIC_URL + "/icons/Кубок.png"}
-                                alt="Rating Icon"
-                                className="rating-icon"
-                            />
-                        </div>
+                            {/* рейтинг */}
+                            <div className="user-rating" onClick={() => setCurrentPage('rating')}>
+                                <div className="text-rating">
+                                    {userData.rating}
+                                </div>
+                                <img
+                                    src={process.env.PUBLIC_URL + "/icons/Кубок.png"}
+                                    alt="Rating Icon"
+                                    className="rating-icon"
+                                />
+                            </div>
                         </div>
 
                         <div className="big-balance-container">
