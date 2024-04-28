@@ -120,6 +120,12 @@
     border: none;
     cursor: pointer;
 }
+.telegram-share-button-inreferal {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 500px;
+}
 
 .referral-text {
     font-size: 0.9em;
@@ -185,17 +191,52 @@
     border-radius: 15px;
     margin: 20px;
 }
+.no-employees-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+.no-employees-content {
+    flex-direction: column;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Занимает всю ширину контейнера */
+}
 
 .no-employees-text {
     color: white;
     font-size: 1.5em;
-    margin-bottom: 10px;
+    position: static;
+    left: 500px;
 }
 .no-employees-text-referal {
     color: gray;
     font-size: 1em;
     margin-bottom: 10px;
 }
+.coins-icon-inshare {
+    width: 30px; /* Размер иконки монеты */
+    height: 30px; /* Размер иконки монеты */
+    margin-left: 5px; /* Отступ слева от текста */
+}
+.share-icon {
+    width: 50px; /* Размер иконки поделиться */
+    height: 50px; /* Размер иконки поделиться */
+}
+.referral-link-button {
+    flex-shrink: 0; /* Не сжимается, чтобы избежать деформации */
+}
+
 .navigation {
     position: fixed;
     bottom: 15px; /* Отступ снизу */

@@ -70,29 +70,32 @@ const Players = () => {
                             <div className="employees-header">Мои работники: {userData.count_slaves}</div>
                             {/* Здесь должен быть ваш код для отображения списка работников */}
                         </div>
-
-                        {userData.count_slaves === 0 && (
-                            <div className="no-employees">
-                                <div className="no-employees-text">
-                                    У вас нет работников.
+                        <div className="no-employees-container">
+                            {userData.count_slaves === 0 && (
+                                <div className="no-employees-content">
+                                    <div className="no-employees-text">
+                                        У вас нет работников.
+                                    </div >
+                                    <div className="referral-link-button">
+                                        <a
+                                            href="https://t.me/share/url?url=https://your-referral-link.com&text=Проверьте+эту+игру!"
+                                            target="_blank"
+                                            className="telegram-share-button"
+                                        >
+                                            <img src={`${process.env.PUBLIC_URL}/icons/share.png`} alt="Coin Icon"
+                                                 className="telegram-share-button-inreferal"/>
+                                        </a>
+                                    </div>
+                                    <div className="coins-icon-inshare">
+                                        <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`}
+                                             alt="Coins"/>
+                                    </div>
+                                    <div className="no-employees-text-referal">
+                                        Пригласи друзей по реферальной ссылке, чтобы начать зарабатывать.
+                                    </div>
                                 </div>
-                                <a
-                                    href="https://t.me/share/url?url=https://your-referral-link.com&text=Проверьте+эту+игру!"
-                                    target="_blank"
-                                    className="telegram-share-button"
-                                >
-                                    <img src={`${process.env.PUBLIC_URL}/icons/share.png`} alt="Coin Icon"
-                                         className="telegram-share-button"/>
-                                </a>
-                                <div className="coins-per-minute">
-                                    <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`}
-                                         alt="Coins"/>
-                                </div>
-                                <div className="no-employees-text-referal">
-                                    Пригласи друзей по реферальной ссылке, чтобы начать зарабатывать.
-                                </div>
-                            </div>
-                        )}
+                            )}
+                        </div>
                     </>
                 );
             case 'boosts':
