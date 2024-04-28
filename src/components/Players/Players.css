@@ -34,7 +34,7 @@
 
 .user-name {
     margin: 5px 0;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: bold;
 }
 .user-name-balance {
@@ -45,14 +45,16 @@
 .user-coins {
     display: flex;
     align-items: center;
-    font-size: 1.2em; /* Увеличенный размер шрифта */
+    font-size: 1em; /* Увеличенный размер шрифта */
     font-weight: bold;
     margin-top: 5px; /* Отступ сверху */
+    margin-left: 10px;
 }
 .coin-icon-coins {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .user-rating {
@@ -66,12 +68,12 @@
     width: 24px;
     height: 24px;
     margin-right: 5px;
+    margin-left: 10px;
 }
 
 .rating-value {
     display: flex;
     align-items: center;
-
     font-size: 1.2em; /* Меньший размер шрифта для рейтинга */
     font-weight: bold;
 }
@@ -79,13 +81,14 @@
 .big-balance-container {
     width: 100%;
     display: flex;
+    font-family: 'SF Pro Display', sans-serif;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .big-balance {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: bold;
     color: white;
     display: flex;
@@ -96,12 +99,14 @@
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .referral-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'SF Pro Display', sans-serif;
     padding: 20px;
     margin: 10px 0;
     background-color: #333;
@@ -118,7 +123,7 @@
 
 .referral-text {
     font-size: 0.9em;
-    color: #bbb;
+    color: white;
     margin-right: 15px;
 }
 
@@ -139,6 +144,7 @@
 
 .employees-container {
     width: 90%;
+    font-family: 'SF Pro Display', sans-serif;
     margin: 20px 0;
 }
 
@@ -169,7 +175,27 @@
 .employee-name {
     font-size: 1em;
 }
+.no-employees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 15px;
+    margin: 20px;
+}
 
+.no-employees-text {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.no-employees-text-referal {
+    color: gray;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
 .navigation {
     position: fixed;
     bottom: 15px; /* Отступ снизу */
@@ -179,6 +205,7 @@
     margin-left: auto; /* Авто-маржины для центровки */
     margin-right: auto; /* Авто-маржины для центровки */
     background-color: #333;
+    font-family: 'SF Pro Display', sans-serif;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;

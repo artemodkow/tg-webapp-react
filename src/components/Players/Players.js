@@ -13,6 +13,7 @@ const Players = () => {
         name: user?.username || "username",
         coins: 56500,
         rating: "Rating " + 10220 + "th",
+        count_slaves: 0
         // Предположим, что вы здесь вставляете реальные данные пользователя...
     };
     const employees = [
@@ -66,9 +67,32 @@ const Players = () => {
                         </div>
 
                         <div className="employees-container">
-                        <div className="employees-header">Мои работники: {employees.length}</div>
+                            <div className="employees-header">Мои работники: {userData.count_slaves}</div>
                             {/* Здесь должен быть ваш код для отображения списка работников */}
                         </div>
+
+                        {userData.count_slaves === 0 && (
+                            <div className="no-employees">
+                                <div className="no-employees-text">
+                                    У вас нет работников.
+                                </div>
+                                <a
+                                    href="https://t.me/share/url?url=https://your-referral-link.com&text=Проверьте+эту+игру!"
+                                    target="_blank"
+                                    className="telegram-share-button"
+                                >
+                                    <img src={`${process.env.PUBLIC_URL}/icons/share.png`} alt="Coin Icon"
+                                         className="telegram-share-button"/>
+                                </a>
+                                <div className="coins-per-minute">
+                                    <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`}
+                                         alt="Coins"/>
+                                </div>
+                                <div className="no-employees-text-referal">
+                                    Пригласи друзей по реферальной ссылке, чтобы начать зарабатывать.
+                                </div>
+                            </div>
+                        )}
                     </>
                 );
             case 'boosts':
