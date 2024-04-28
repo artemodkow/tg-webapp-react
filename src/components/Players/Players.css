@@ -187,8 +187,9 @@
     border-radius: 15px;
     margin: 20px;
     position: relative; /* Для абсолютного позиционирования дочерних элементов */
-    width: 100%; /* или фиксированная ширина в пикселях, если необходимо */
-    max-width: 500px; /* или ваша максимальная ширина */
+    width: 97%; /* или фиксированная ширина в пикселях, если необходимо */
+    height: 300px;
+    max-width: 100%; /* или ваша максимальная ширина */
 }
 .no-employees-content {
     flex-direction: column;
@@ -215,7 +216,7 @@
 }
 .coins-icon-inshare {
     position: absolute; /* Абсолютное позиционирование внутри контейнера */
-    margin-left: 90px;
+    margin-right: 10px;
     width: 80px;
     height: 80px;
 }
@@ -229,13 +230,13 @@
 }
 .telegram-share-button-inreferal {
     position: absolute; /* Абсолютное позиционирование внутри контейнера */
-    margin-right: 120px;
+    margin-right: 100px;
     width: 40px;
     height: 40px;
 }
 .share-icon {
-    width: 50px; /* Размер иконки поделиться */
-    height: 50px; /* Размер иконки поделиться */
+    width: 50px;
+    height: 50px;
 }
 .referral-link-button {
     align-self: flex-start; /* Выравнивание кнопки слева */
