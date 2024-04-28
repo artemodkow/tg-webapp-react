@@ -43,13 +43,13 @@ const Players = () => {
                             </div>
                         </div>
 
-                        <div className="big-balance-container">
+                        {/*<div className="big-balance-container">
                             <div className="big-balance">
                                 <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin Icon"
                                      className="coin-icon"/>
                                 {userData.coins}
                             </div>
-                        </div>
+                        </div>*/}
 
                         <div className="referral-container">
                             <div className="referral-text">

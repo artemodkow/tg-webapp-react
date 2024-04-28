@@ -70,22 +70,22 @@
     font-weight: bold;
 }
 
-.big-balance-container {
+/*.big-balance-container {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* или другое значение, которое вам нужно */
+    margin-top: 20px; !* или другое значение, которое вам нужно *!
     margin-bottom: 20px;
 }
 
 .big-balance {
-    font-size: 4.8em; /* Увеличьте размер шрифта для большего баланса */
+    font-size: 4.8em; !* Увеличьте размер шрифта для большего баланса *!
     font-weight: bold;
-    color: #ffd700; /* Цвет текста для монет */
+    color: #ffd700; !* Цвет текста для монет *!
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 .coin-icon {
     width: 30px;
     height: 30px;
