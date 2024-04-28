@@ -1,4 +1,3 @@
-/*
 const tg = window.Telegram.WebApp;
 
 export  function usetelegram() {
@@ -7,4 +6,4 @@ export  function usetelegram() {
         tg,
         user: tg.initDataUnsafe?.user,
     }
-}*/
+}
