@@ -82,13 +82,13 @@ const Players = () => {
                                             target="_blank"
                                             className="telegram-share-button"
                                         >
-                                            <img src={`${process.env.PUBLIC_URL}/icons/share.png`} alt="Coin Icon"
+                                            <img src={`${process.env.PUBLIC_URL}/icons/share.png`} alt="share button"
                                                  className="telegram-share-button-inreferal"/>
                                         </a>
                                     </div>
                                     <div className="coins-icon-inshare">
                                         <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`}
-                                             alt="Coins"/>
+                                             alt="Coins" className="coins-icon-inshare"/>
                                     </div>
                                     <div className="no-employees-text-referal">
                                         Пригласи друзей по реферальной ссылке, чтобы начать зарабатывать.

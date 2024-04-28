@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 
 const ShareButton = ({ url }) => {
@@ -20,3 +21,4 @@ const ShareButton = ({ url }) => {
 };
 
 export default ShareButton;
+*/

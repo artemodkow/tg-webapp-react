@@ -112,20 +112,6 @@
     background-color: #333;
     border-radius: 15px;
 }
-.telegram-share-button {
-    display: block;
-    width: 50px; /* или ширина вашей картинки */
-    height: 50px; /* или высота вашей картинки */
-    background-size: contain;
-    border: none;
-    cursor: pointer;
-}
-.telegram-share-button-inreferal {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    left: 500px;
-}
 
 .referral-text {
     font-size: 0.9em;
@@ -229,11 +215,23 @@
 }
 .coins-icon-inshare {
     position: absolute; /* Абсолютное позиционирование внутри контейнера */
-    right: 20px; /* Отступ справа */
-    top: 50%; /* Позиционирование по вертикали */
-    transform: translateY(-50%); /* Центрирование по вертикали */
-    width: 60px; /* Размер иконки монеты */
-    height: 60px; /* Размер иконки монеты */
+    margin-left: 90px;
+    width: 80px;
+    height: 80px;
+}
+.telegram-share-button {
+    display: block;
+    width: 50px; /* или ширина вашей картинки */
+    height: 50px; /* или высота вашей картинки */
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.telegram-share-button-inreferal {
+    position: absolute; /* Абсолютное позиционирование внутри контейнера */
+    margin-right: 120px;
+    width: 40px;
+    height: 40px;
 }
 .share-icon {
     width: 50px; /* Размер иконки поделиться */
