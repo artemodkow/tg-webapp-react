@@ -12,11 +12,13 @@
 
 .user-info {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; /* Это растянет дочерние элементы по краям */
     align-items: center;
     width: 100%;
     padding: 20px;
-    box-sizing: border-box;
+    background-color: #333; /* Темный фон */
+    border-radius: 20px; /* Закругленные углы */
+    margin-bottom: 20px; /* Отступ снизу */
 }
 
 /*.user-avatar {
@@ -34,26 +36,54 @@
     font-size: 1.4em;
     font-weight: bold;
 }
+.user-name-balance {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.user-coins {
+    display: flex;
+    align-items: center;
+    font-size: 1.6em; /* Увеличенный размер шрифта */
+    font-weight: bold;
+    margin-top: 5px; /* Отступ сверху */
+}
 
 .user-rating {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-left: auto;
 }
 
 .rating-icon {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.rating-value {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em; /* Меньший размер шрифта для рейтинга */
+    font-weight: bold;
+}
+
+.big-balance-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .big-balance {
-    font-size: 2.4em;
+    font-size: 4.8em;
     font-weight: bold;
+    color: #ffd700;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-
 .coin-icon {
     width: 30px;
     height: 30px;
@@ -167,10 +197,10 @@
         height: 60px;
     }
 
-    .employee-avatar {
-        width: 30px;
-        height: 30px;
-    }
+.employee-avatar {
+    width: 30px;
+    height: 30px;
+}
 
     .navigation button {
         font-size: 0.8em;
