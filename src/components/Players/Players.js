@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './Players.css';
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
-/*import {usetelegram} from "../hooks/usetelegram";*/
+import {usetelegram} from "../hooks/usetelegram";
 
 const Players = () => {
-    /*const {tg, user, avatar} = usetelegram();*/
+    const {tg, user, avatar} = usetelegram();
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
        /* avatar: avatar,*/
