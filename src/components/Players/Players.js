@@ -10,7 +10,7 @@ const Players = () => {
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
        /* avatar: avatar,*/
-        name: user?.username,
+        name: user?.username || "username",
         coins: 56500,
         rating: "Rating " + 10220 + "th",
         // Предположим, что вы здесь вставляете реальные данные пользователя...
@@ -33,7 +33,7 @@ const Players = () => {
                             <div className="user-coins">
                                 {userData.coins}
                                 <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
-                                     className="coin-icon"/>
+                                     className="coin-icon-coins"/>
                             </div>
                             {/*рейтинг*/}
                             <div className="user-rating">
@@ -55,11 +55,18 @@ const Players = () => {
                             <div className="referral-text">
                                 Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
                             </div>
-                            <ShareButton url="https://your-referral-link.com"/>
+                            <a
+                                href="https://t.me/share/url?url=https://your-referral-link.com&text=Проверьте+эту+игру!"
+                                target="_blank"
+                                className="telegram-share-button"
+                            >
+                                <img src={`${process.env.PUBLIC_URL}/icons/share.png`} alt="Coin Icon"
+                                     className="telegram-share-button"/>
+                            </a>
                         </div>
 
                         <div className="employees-container">
-                            <div className="employees-header">Мои работники: {employees.length}</div>
+                        <div className="employees-header">Мои работники: {employees.length}</div>
                             {/* Здесь должен быть ваш код для отображения списка работников */}
                         </div>
                     </>

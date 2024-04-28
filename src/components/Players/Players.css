@@ -14,7 +14,8 @@
     display: flex;
     justify-content: space-between; /* Это растянет дочерние элементы по краям */
     align-items: center;
-    width: 100%;
+    margin-top: 10px;
+    width: 95%;
     padding: 20px;
     background-color: #333; /* Темный фон */
     border-radius: 20px; /* Закругленные углы */
@@ -44,15 +45,19 @@
 .user-coins {
     display: flex;
     align-items: center;
-    font-size: 1.6em; /* Увеличенный размер шрифта */
+    font-size: 1.2em; /* Увеличенный размер шрифта */
     font-weight: bold;
-
     margin-top: 5px; /* Отступ сверху */
+}
+.coin-icon-coins {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .user-rating {
     display: flex;
-
+    color: orange;
     align-items: center;
     margin-left: auto;
 }
@@ -66,6 +71,7 @@
 .rating-value {
     display: flex;
     align-items: center;
+
     font-size: 1.2em; /* Меньший размер шрифта для рейтинга */
     font-weight: bold;
 }
@@ -79,7 +85,7 @@
 }
 
 .big-balance {
-    font-size: 4.8em;
+    font-size: 4em;
     font-weight: bold;
     color: white;
     display: flex;
@@ -87,8 +93,8 @@
     justify-content: center;
 }
 .coin-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
 }
 
@@ -100,6 +106,14 @@
     margin: 10px 0;
     background-color: #333;
     border-radius: 15px;
+}
+.telegram-share-button {
+    display: block;
+    width: 50px; /* или ширина вашей картинки */
+    height: 50px; /* или высота вашей картинки */
+    background-size: contain;
+    border: none;
+    cursor: pointer;
 }
 
 .referral-text {
@@ -162,7 +176,6 @@
     left: 0;
     right: 0; /* Добавлено для центровки, если будет максимальная ширина */
     width: 95%;
-    max-width: 500px; /* Максимальная ширина, если хотите ограничить ширину навигации */
     margin-left: auto; /* Авто-маржины для центровки */
     margin-right: auto; /* Авто-маржины для центровки */
     background-color: #333;
