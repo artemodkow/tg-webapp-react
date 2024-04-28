@@ -12,7 +12,7 @@ const Players = () => {
        /* avatar: avatar,*/
         name: user?.username,
         coins: 56500,
-        rating: 10220,
+        rating: "Rating " + 10220 + "th",
         // Предположим, что вы здесь вставляете реальные данные пользователя...
     };
     const employees = [
@@ -31,23 +31,23 @@ const Players = () => {
                             <div className="user-name">{userData.name}</div>
                             {/*монеты у ника*/}
                             <div className="user-coins">
+                                {userData.coins}
                                 <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
                                      className="coin-icon"/>
-                                {userData.coins}
                             </div>
                             {/*рейтинг*/}
                             <div className="user-rating">
+                                <div>{userData.rating}</div>
                                 <img src={process.env.PUBLIC_URL + "/icons/Кубок.png"} alt="Rating Icon"
                                      className="rating-icon"/>
-                                <div>{userData.rating}</div>
                             </div>
                         </div>
 
                         <div className="big-balance-container">
                             <div className="big-balance">
+                                {userData.coins}
                                 <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin Icon"
                                      className="coin-icon"/>
-                                {userData.coins}
                             </div>
                         </div>
 
