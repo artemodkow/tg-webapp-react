@@ -31,7 +31,8 @@ const Players = () => {
                             <div className="user-name">{userData.name}</div>
                             {/*монеты у ника*/}
                             <div className="user-coins">
-                                <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin" className="coin-icon"/>
+                                <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
+                                     className="coin-icon"/>
                                 {userData.coins}
                             </div>
                             {/*рейтинг*/}
@@ -40,21 +41,23 @@ const Players = () => {
                                      className="rating-icon"/>
                                 <div>{userData.rating}</div>
                             </div>
-                            {/*баланс посередине*/}
-                            <div className="big-balance-container">
-                                <div className="big-balance">
-                                    <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin Icon"
-                                         className="coin-icon"/>
-                                    {userData.coins}
-                                </div>
+                        </div>
+
+                        <div className="big-balance-container">
+                            <div className="big-balance">
+                                <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin Icon"
+                                     className="coin-icon"/>
+                                {userData.coins}
                             </div>
                         </div>
+
                         <div className="referral-container">
                             <div className="referral-text">
-                            Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
+                                Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
                             </div>
-                            <ShareButton url="https://your-referral-link.com" />
+                            <ShareButton url="https://your-referral-link.com"/>
                         </div>
+
                         <div className="employees-container">
                             <div className="employees-header">Мои работники: {employees.length}</div>
                             {/* Здесь должен быть ваш код для отображения списка работников */}
@@ -62,9 +65,9 @@ const Players = () => {
                     </>
                 );
             case 'boosts':
-                return <Boosts />;
+                return <Boosts/>;
             case 'trade':
-                return <Trade />;
+                return <Trade/>;
             default:
                 return null;
         }

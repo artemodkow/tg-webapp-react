@@ -74,7 +74,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px 0; /* Добавляет отступ сверху и снизу */
+    margin-top: 20px; /* или другое значение, которое вам нужно */
+    margin-bottom: 20px;
 }
 
 .big-balance {
