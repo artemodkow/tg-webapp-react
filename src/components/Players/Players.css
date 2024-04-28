@@ -204,7 +204,7 @@
 
 .no-employees-text {
     font-size: 1.5em; /* размер текста */
-    margin-bottom: 10px; /* отступ до следующего блока */
+    margin-bottom: 3px; /* отступ до следующего блока */
     width: 100px;
     height: 100px;
 }
