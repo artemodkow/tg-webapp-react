@@ -60,6 +60,8 @@
 .user-rating {
     display: flex;
     color: orange;
+    width: 40px;
+    height: 40px;
     align-items: center;
     cursor: pointer;
     margin-left: auto;
@@ -189,7 +191,7 @@
     align-items: flex-start;
     width: 95%; /* или фиксированная ширина, если нужно */
     max-width: 500px; /* максимальная ширина */
-    margin: 0 auto 20px; /* центрирование блока и отступ снизу */
+    margin: 0 auto; /* центрирование блока и отступ снизу */
 }
 .no-employees-content {
     flex-direction: column;
@@ -240,8 +242,9 @@
     height: 50px;
 }
 .referral-link-button {
-    align-self: flex-start; /* Выравнивание кнопки слева */
-    margin-bottom: 10px; /* Расстояние до следующего элемента */
+    align-self: center; /* Центрируем кнопку внутри контейнера */
+    margin-top: -20px; /* Выравнивание кнопки слева */
+    margin-bottom: 5px; /* Расстояние до следующего элемента */
 }
 
 .navigation {
@@ -262,6 +265,12 @@
     overflow: hidden; /* Для поддержания закругления внутренних элементов */
 }
 
+.nav-icon {
+    width: 24px; /* Устанавливаем ширину иконки */
+    height: 24px; /* Устанавливаем высоту иконки */
+    margin-bottom: 5px; /* Добавляем отступ между иконкой и текстом */
+}
+
 .navigation button {
     background: none;
     border: none;
@@ -270,6 +279,9 @@
     font-size: 1em;
     cursor: pointer;
     outline: none;
+    display: flex; /* Добавляем flexbox для выравнивания */
+    flex-direction: column; /* Ставим иконку над текстом */
+    align-items: center; /* Центрируем содержимое кнопки */
 }
 
 .navigation button.active {

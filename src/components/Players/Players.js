@@ -61,7 +61,7 @@ const Players = () => {
                             {/*никнейм*/}
                             <div className="user-name">{userData.name}</div>
                             {/*монеты у ника*/}
-                            <div className="user-coins">
+                            <div className="user-name-balance">
                                 {userData.coins}
                                 <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
                                      className="coin-icon-coins"/>
@@ -125,9 +125,19 @@ const Players = () => {
             {/* Показать навигационные кнопки только если текущая страница не 'rating' */}
             {currentPage !== 'rating' && (
                 <div className="navigation">
-                    <button onClick={() => setCurrentPage('players')}>Players</button>
-                    <button onClick={() => setCurrentPage('boosts')}>Boosts</button>
-                    <button onClick={() => setCurrentPage('trade')}>Trade</button>
+                    <button onClick={() => setCurrentPage('players')}>
+                        <img src={`${process.env.PUBLIC_URL}/icons/players.png`} alt="Players"
+                             className="nav-icon"/>
+                        Players
+                    </button>
+                    <button onClick={() => setCurrentPage('boosts')}>
+                        <img src={`${process.env.PUBLIC_URL}/icons/boosts.png`} alt="Boosts" className="nav-icon"/>
+                        Boosts
+                    </button>
+                    <button onClick={() => setCurrentPage('trade')}>
+                        <img src={`${process.env.PUBLIC_URL}/icons/trade.png`} alt="Trade" className="nav-icon"/>
+                        Trade
+                    </button>
                 </div>
             )}
             {/* Остальное содержимое, например, вывод компонента с игроками */}
