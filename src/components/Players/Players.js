@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Players.css';
-import ShareButton from './ShareButton'; // Путь до ShareButton.js может отличаться
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
 import {usetelegram} from "../hooks/usetelegram";
