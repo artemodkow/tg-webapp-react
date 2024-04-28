@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import './Players.css';
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
-import {usetelegram} from "./usetelegram";
+import {usetelegram} from "../../../node_modules/hooks/usetelegram";
 
 const Players = () => {
-    const {tg, user, avatar} = usetelegram();
+    const {username} = usetelegram();
     const [currentPage, setCurrentPage] = useState('players');
     const userData = {
        /* avatar: avatar,*/
-        user: tg?.initDataUnsafe?.user || "username",
+        user: username || "username",
         coins: 56500,
         rating: "Rating " + 10220 + "th",
         count_slaves: 0
