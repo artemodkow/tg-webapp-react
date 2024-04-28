@@ -178,18 +178,17 @@
     margin: 20px;
 }
 .no-employees-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Выравнивание элементов слева */
-    justify-content: space-between;
-    padding: 20px;
     background-color: #333;
     border-radius: 15px;
-    margin: 20px;
-    position: relative; /* Для абсолютного позиционирования дочерних элементов */
-    width: 97%; /* или фиксированная ширина в пикселях, если необходимо */
-    height: 300px;
-    max-width: 100%; /* или ваша максимальная ширина */
+    color: white;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%; /* или фиксированная ширина, если нужно */
+    max-width: 500px; /* максимальная ширина */
+    margin: 0 auto 20px; /* центрирование блока и отступ снизу */
 }
 .no-employees-content {
     flex-direction: column;
@@ -204,29 +203,28 @@
 }
 
 .no-employees-text {
-    color: white;
-    font-size: 1.5em;
-    margin-bottom: 10px; /* Расстояние до следующего элемента */
+    font-size: 1.5em; /* размер текста */
+    margin-bottom: 10px; /* отступ до следующего блока */
 }
 
 .no-employees-text-referal {
+    font-size: 1em; /* размер текста */
+    margin-top: 10px;
     color: gray;
-    font-size: 1em;
-    margin-bottom: 10px; /* Расстояние до нижнего края контейнера */
 }
 .coins-icon-inshare {
-    position: absolute; /* Абсолютное позиционирование внутри контейнера */
-    margin-right: 10px;
-    width: 80px;
-    height: 80px;
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    top: 20px; /* Отступ сверху внутри контейнера */
+    right: 80px; /* Отступ справа внутри контейнера */
+}
+.coins-icon-size{
+    width: 100px;
+    height: 100px;
 }
 .telegram-share-button {
-    display: block;
-    width: 50px; /* или ширина вашей картинки */
-    height: 50px; /* или высота вашей картинки */
-    background-size: contain;
-    border: none;
-    cursor: pointer;
+    width: 50px; /* размер иконки */
+    height: 50px; /* размер иконки */
+    /* другие стили для кнопки, если нужно */
 }
 .telegram-share-button-inreferal {
     position: absolute; /* Абсолютное позиционирование внутри контейнера */
