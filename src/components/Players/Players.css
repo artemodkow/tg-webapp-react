@@ -18,7 +18,7 @@
     box-shadow: 5px -2px 15px rgba(0,0,0,0.5);
     width: 95%;
     padding: 15px;
-    background-color: #333; /* Темный фон */
+    background-color: #333333; /* Темный фон */
     border-radius: 30px; /* Закругленные углы */
     margin-bottom: 20px; /* Отступ снизу */
 }
@@ -51,29 +51,31 @@
     align-items: center;
     font-size: 1em; /* Увеличенный размер шрифта */
     font-weight: bold;
-    margin-top: 5px; /* Отступ сверху */
     margin-left: 10px;
 }
 .coin-icon-coins {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    margin-left: 7px;
 }
 
 .user-rating {
     background: darkslategrey;
-    width: auto; /* Ширина будет определяться содержимым */
     padding: 5px 10px; /* Добавляем немного внутренних отступов */
     display: flex;
     align-items: center;
-    border-radius: 15px; /* Добавляем закругление углов */
+    border-radius: 20px; /* Добавляем закругление углов */
     cursor: pointer;
+    width: 40px;
+    height: 40px;
     margin-left: auto;
-    margin-right: 20px; /* Отступ справа, чтобы не прилипало к краю */
+    margin-right: 10px; /* Отступ справа, чтобы не прилипало к краю */
 }
 
 .text-rating {
-    margin-right: 5px; /* Уменьшаем отступ перед иконкой кубка */
+    width: 15px;
+    margin-left: 170px; /* Уменьшаем отступ перед иконкой кубка */
+    margin-right: 10px;
     font-size: 0.9em; /* Устанавливаем размер текста */
     color: #FFD700; /* Можно изменить цвет текста, если нужно */
 }
@@ -88,8 +90,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .big-balance {
@@ -147,10 +149,11 @@
 }
 
 .employees-header {
-    margin-right: 310px;
-    font-size: 1.2em;
+    margin-right: 260px;
+    font-size: 1.1em;
     margin-top: -15px;
     margin-bottom: 15px;
+    white-space: nowrap;
 }
 
 .employee-item {

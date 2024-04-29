@@ -69,8 +69,9 @@ const Players = () => {
                             </div>
                             {/*рейтинг*/}
                             {/* рейтинг */}
+                            <div className="text-rating">{userData.rating}</div>
                             <div className="user-rating" onClick={() => setCurrentPage('rating')}>
-                                <div className="text-rating">{userData.rating}</div>
+
                                 <img
                                     src={process.env.PUBLIC_URL + "/icons/Кубок.png"}
                                     alt="Rating Icon"
