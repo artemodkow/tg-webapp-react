@@ -33,7 +33,7 @@ const Players = () => {
             </div>
             <div className="referral-link-button">
                 <a
-                    href="https://t.me/share/url?url=https://your-referral-link.com&text=Проверьте+эту+игру!"
+                    href="https://t.me/share/url?url=https://t.me/sharecointestbot&text=Ты стал моим рабом!!! Заходи выкупиться"
                     target="_blank"
                     className="telegram-share-button"
                 >
@@ -98,7 +98,7 @@ const Players = () => {
                                 Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
                             </div>
                             <a
-                                href="https://t.me/share/url?url=https://your-referral-link.com&text=Проверьте+эту+игру!"
+                                href="https://t.me/share/url?url=https://t.me/sharecointestbot&text=Ты стал моим рабом!!! Заходи выкупиться"
                                 target="_blank"
                                 className="telegram-share-button"
                             >

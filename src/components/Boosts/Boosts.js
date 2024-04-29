@@ -7,15 +7,23 @@ const Boosts = () => {
     return (
         <div className="boosts-container">
             <header className="boosts-header">
-                <h1>Boost</h1>
+                    <div className="text-head">
+                        Boost
+                    </div>
+            </header>
+            <header className="boosts-header">
                 <div className="task-header">
-                    Задания за <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin" className="coin-in-header"/>
+                    <div className="text-header">
+                        Задания за
+                    </div>
+                    <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
+                         className="coin-in-header"/>
                 </div>
             </header>
 
             <div className="boosts-tasks">
                 <div className="boosts-text">
-                <span className="task">Подписаться на группу</span>
+                    <span className="task">Подписаться на группу</span>
                     <span className="task"> <img src={process.env.PUBLIC_URL +
                         "/icons/Монетка золотая право.png"} alt="Coin" className="coin"/> +1,000
                     </span>
