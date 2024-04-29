@@ -279,6 +279,7 @@
     box-shadow: 0px -2px 10px rgba(0,0,0,0.5);
     border-radius: 30px; /* Закругление углов */
     overflow: hidden; /* Для поддержания закругления внутренних элементов */
+    z-index: 1;
 }
 
 .nav-icon {

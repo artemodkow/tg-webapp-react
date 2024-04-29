@@ -8,31 +8,35 @@ const Boosts = () => {
         <div className="boosts-container">
             <header className="boosts-header">
                 <h1>Boost</h1>
-                <div className="coins">Задания за <span role="img" aria-label="coin">🪙</span></div>
+                <div className="task-header">
+                    Задания за <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin" className="coin-in-header"/>
+                </div>
             </header>
 
             <div className="boosts-tasks">
                 <div className="boosts-text">
-                    <span className="task">Подписаться на группу</span>
-                    <span className="task">+1,000
-                    <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
-                         className="coin"/></span>
+                <span className="task">Подписаться на группу</span>
+                    <span className="task"> <img src={process.env.PUBLIC_URL +
+                        "/icons/Монетка золотая право.png"} alt="Coin" className="coin"/> +1,000
+                    </span>
                     <img src={process.env.PUBLIC_URL + "/icons/vk.png"} alt="Coin"
                          className="icon"/>
                 </div>
                 <div className="boosts-text">
                     <span className="task">Оценить публикацию</span>
-                    <span className="task">+1,000
-                        <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
-                             className="coin"/></span>
+                    <span className="task"><img src={process.env.PUBLIC_URL +
+                        "/icons/Монетка золотая право.png"} alt="Coin" className="coin"/>+1,000
+                    </span>
                     <img src={process.env.PUBLIC_URL + "/icons/ya.png"} alt="Coin"
                          className="icon"/>
                 </div>
                 <div className="boosts-text">
                     <span className="task">Оценить публикацию</span>
-                    <span className="task">+1,000
-                    <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
-                         className="coin"/></span>
+                    <span className="task">
+                        <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
+                             className="coin"/>
+                        +1,000
+                    </span>
                     <img src={process.env.PUBLIC_URL + "/icons/telegram.png"} alt="Coin"
                          className="icon"/>
                 </div>
