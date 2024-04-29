@@ -74,8 +74,8 @@
 
 .text-rating {
     width: 15px;
-    margin-left: 170px; /* Уменьшаем отступ перед иконкой кубка */
-    margin-right: 10px;
+    position: absolute;
+    right: 130px;
     font-size: 0.9em; /* Устанавливаем размер текста */
     color: #FFD700; /* Можно изменить цвет текста, если нужно */
 }
@@ -149,7 +149,7 @@
 }
 
 .employees-header {
-    margin-right: 260px;
+    margin-right: 240px;
     font-size: 1.1em;
     margin-top: -15px;
     margin-bottom: 15px;
