@@ -68,7 +68,7 @@
     cursor: pointer;
     width: 40px;
     height: 40px;
-    margin-left: auto;
+    margin-left: 40px;
     margin-right: 10px; /* Отступ справа, чтобы не прилипало к краю */
 }
 
