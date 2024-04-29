@@ -69,7 +69,11 @@ const Players = () => {
                             </div>
                             {/*рейтинг*/}
                             {/* рейтинг */}
-                            <div className="text-rating">{userData.rating}</div>
+                            <div className="text-rating">
+                                <div className="text-rating-gradient">
+                                    {userData.rating}
+                                </div>
+                            </div>
                             <div className="user-rating" onClick={() => setCurrentPage('rating')}>
 
                                 <img

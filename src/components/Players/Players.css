@@ -73,11 +73,16 @@
 }
 
 .text-rating {
-    width: 15px;
+    width: 70px;
     position: absolute;
-    right: 130px;
+    right: 80px;
     font-size: 0.9em; /* Устанавливаем размер текста */
-    color: #FFD700; /* Можно изменить цвет текста, если нужно */
+}
+.text-rating-gradient {
+    background: linear-gradient(to bottom, #ffcc00, #ff9900);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .rating-icon {
@@ -144,12 +149,15 @@
 }
 
 .employees-container {
-    width: 100%;
-    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 93%;
 }
 
 .employees-header {
-    margin-right: 240px;
     font-size: 1.1em;
     margin-top: -15px;
     margin-bottom: 15px;
