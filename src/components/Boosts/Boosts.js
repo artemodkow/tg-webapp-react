@@ -12,9 +12,30 @@ const Boosts = () => {
             </header>
 
             <div className="boosts-tasks">
-                <button className="boosts-task">Подписаться на группу <span>+1,000</span></button>
-                <button className="boosts-task">Оценить публикацию <span>+1,000</span></button>
-                <button className="boosts-task">Подписаться на канал <span>+1,000</span></button>
+                <div className="boosts-text">
+                    <span className="task">Подписаться на группу</span>
+                    <span className="task">+1,000
+                    <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
+                         className="coin"/></span>
+                    <img src={process.env.PUBLIC_URL + "/icons/vk.png"} alt="Coin"
+                         className="icon"/>
+                </div>
+                <div className="boosts-text">
+                    <span className="task">Оценить публикацию</span>
+                    <span className="task">+1,000
+                        <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
+                             className="coin"/></span>
+                    <img src={process.env.PUBLIC_URL + "/icons/ya.png"} alt="Coin"
+                         className="icon"/>
+                </div>
+                <div className="boosts-text">
+                    <span className="task">Оценить публикацию</span>
+                    <span className="task">+1,000
+                    <img src={process.env.PUBLIC_URL + "/icons/Монетка золотая право.png"} alt="Coin"
+                         className="coin"/></span>
+                    <img src={process.env.PUBLIC_URL + "/icons/telegram.png"} alt="Coin"
+                         className="icon"/>
+                </div>
             </div>
 
             <div className="boosts-premium">
