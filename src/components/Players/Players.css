@@ -197,7 +197,7 @@
     align-items: flex-start;
     width: 95%; /* или фиксированная ширина, если нужно */
     max-width: 500px; /* максимальная ширина */
-    margin: 0 auto; /* центрирование блока и отступ снизу */
+    margin: -10px auto; /* центрирование блока и отступ снизу */
 }
 .no-employees-content {
     flex-direction: column;
