@@ -15,6 +15,7 @@
     justify-content: space-between; /* Это растянет дочерние элементы по краям */
     align-items: center;
     margin-top: 20px;
+    box-shadow: 5px -2px 15px rgba(0,0,0,0.5);
     width: 95%;
     padding: 15px;
     background-color: #333; /* Темный фон */
@@ -116,6 +117,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    box-shadow: 5px -2px 15px rgba(0,0,0,0.5);
     margin: 10px 0;
     width: 95%; /* или фиксированная ширина, если нужно */
     max-width: 500px; /* максимальная ширина */
@@ -150,8 +152,10 @@
 }
 
 .employees-header {
+    margin-right: 330px;
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-top: -5px;
+    margin-bottom: 15px;
 }
 
 .employee-item {
@@ -197,7 +201,8 @@
     align-items: flex-start;
     width: 95%; /* или фиксированная ширина, если нужно */
     max-width: 500px; /* максимальная ширина */
-    margin: -10px auto; /* центрирование блока и отступ снизу */
+    box-shadow: 5px -2px 15px rgba(0,0,0,0.5);
+    margin: -20px auto; /* центрирование блока и отступ снизу */
 }
 .no-employees-content {
     flex-direction: column;
@@ -254,7 +259,7 @@
 
 .navigation {
     position: fixed;
-    bottom: 15px; /* Отступ снизу */
+    bottom: 10px; /* Отступ снизу */
     left: 0;
     right: 0; /* Добавлено для центровки, если будет максимальная ширина */
     width: 95%;
@@ -264,7 +269,7 @@
     font-family: 'SF Pro Display', sans-serif;
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 8px 0;
     box-shadow: 0px -2px 10px rgba(0,0,0,0.5);
     border-radius: 20px; /* Закругление углов */
     overflow: hidden; /* Для поддержания закругления внутренних элементов */
@@ -273,7 +278,7 @@
 .nav-icon {
     width: 24px; /* Устанавливаем ширину иконки */
     height: 24px; /* Устанавливаем высоту иконки */
-    margin-bottom: 5px; /* Добавляем отступ между иконкой и текстом */
+    margin-bottom: 1px; /* Добавляем отступ между иконкой и текстом */
 }
 
 .navigation button {
