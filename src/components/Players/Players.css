@@ -19,7 +19,7 @@
     width: 95%;
     padding: 15px;
     background-color: #333; /* Темный фон */
-    border-radius: 25px; /* Закругленные углы */
+    border-radius: 30px; /* Закругленные углы */
     margin-bottom: 20px; /* Отступ снизу */
 }
 
@@ -61,32 +61,27 @@
 }
 
 .user-rating {
+    background: darkslategrey;
+    width: auto; /* Ширина будет определяться содержимым */
+    padding: 5px 10px; /* Добавляем немного внутренних отступов */
     display: flex;
-    color: orange;
     align-items: center;
+    border-radius: 15px; /* Добавляем закругление углов */
     cursor: pointer;
     margin-left: auto;
+    margin-right: 20px; /* Отступ справа, чтобы не прилипало к краю */
 }
-.text-rating{
-    width: 30px;
-    height: 30px;
-    margin-right: 30px;
-    margin-bottom: 10px;
+
+.text-rating {
+    margin-right: 5px; /* Уменьшаем отступ перед иконкой кубка */
+    font-size: 0.9em; /* Устанавливаем размер текста */
+    color: #FFD700; /* Можно изменить цвет текста, если нужно */
 }
 
 .rating-icon {
     width: 24px;
     height: 24px;
-    cursor: pointer;
-    margin-right: 5px;
-    margin-left: 10px;
-}
-
-.rating-value {
-    display: flex;
-    align-items: center;
-    font-size: 1.2em; /* Меньший размер шрифта для рейтинга */
-    font-weight: bold;
+    align-self: center; /* Выравниваем иконку по центру по вертикали */
 }
 
 .big-balance-container {
@@ -147,14 +142,14 @@
 }
 
 .employees-container {
-    width: 90%;
-    margin: 20px 0;
+    width: 100%;
+    margin: 15px 0;
 }
 
 .employees-header {
-    margin-right: 330px;
+    margin-right: 310px;
     font-size: 1.2em;
-    margin-top: -5px;
+    margin-top: -15px;
     margin-bottom: 15px;
 }
 
@@ -259,7 +254,7 @@
 
 .navigation {
     position: fixed;
-    bottom: 10px; /* Отступ снизу */
+    bottom: 7px; /* Отступ снизу */
     left: 0;
     right: 0; /* Добавлено для центровки, если будет максимальная ширина */
     width: 95%;
@@ -269,15 +264,15 @@
     font-family: 'SF Pro Display', sans-serif;
     display: flex;
     justify-content: space-around;
-    padding: 8px 0;
+    padding: 7px 0;
     box-shadow: 0px -2px 10px rgba(0,0,0,0.5);
-    border-radius: 20px; /* Закругление углов */
+    border-radius: 30px; /* Закругление углов */
     overflow: hidden; /* Для поддержания закругления внутренних элементов */
 }
 
 .nav-icon {
-    width: 24px; /* Устанавливаем ширину иконки */
-    height: 24px; /* Устанавливаем высоту иконки */
+    width: 20px; /* Устанавливаем ширину иконки */
+    height: 20px; /* Устанавливаем высоту иконки */
     margin-bottom: 1px; /* Добавляем отступ между иконкой и текстом */
 }
 

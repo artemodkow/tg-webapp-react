@@ -18,7 +18,7 @@ const Players = () => {
        /* avatar: avatar,*/
         name: "username",
         coins: "130,412",
-        rating: "Rating " + 10220 + "th",
+        rating: "Rating " + "10,220" + "th",
         count_slaves: 0
         // Предположим, что вы здесь вставляете реальные данные пользователя...
     };
@@ -70,15 +70,14 @@ const Players = () => {
                             {/*рейтинг*/}
                             {/* рейтинг */}
                             <div className="user-rating" onClick={() => setCurrentPage('rating')}>
-                                <div className="text-rating">
-                                    {userData.rating}
-                                </div>
+                                <div className="text-rating">{userData.rating}</div>
                                 <img
                                     src={process.env.PUBLIC_URL + "/icons/Кубок.png"}
                                     alt="Rating Icon"
                                     className="rating-icon"
                                 />
                             </div>
+
                         </div>
 
                         <div className="big-balance-container">
