@@ -65,6 +65,7 @@
     display: flex;
     align-items: center;
     border-radius: 20px; /* Добавляем закругление углов */
+    border: none;
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -88,6 +89,7 @@
 .rating-icon {
     width: 24px;
     height: 24px;
+    outline: none;
     align-self: center; /* Выравниваем иконку по центру по вертикали */
 }
 
@@ -263,6 +265,7 @@
     margin-top: -30px; /* Выравнивание кнопки слева */
     margin-bottom: 5px; /* Расстояние до следующего элемента */
     border: none;
+    outline: none;
 }
 
 .navigation {

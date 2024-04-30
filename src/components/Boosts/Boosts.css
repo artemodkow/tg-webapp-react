@@ -45,13 +45,14 @@
 
 .boosts-text {
     color: white;
-    padding: 10px;
+    padding: 7px;
     border: none;
     font-size: 16px;
     display: flex;
     justify-content: center;
     width: 90%;
     white-space: nowrap;
+    margin-left: 15px;
 }
 
 
@@ -62,14 +63,15 @@
     display: flex;
     align-items: center;
     margin-right: 20px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 .boosts-text .icon {
     background-color: #2c2c2e;
     border-radius: 15px;
     display: flex;
+    border: none;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 .boosts-text .coin {
     width: 15px;
@@ -80,6 +82,10 @@
 
 .boosts-task:last-child {
     margin-bottom: 0;
+}
+
+.line{
+    width: 100%;
 }
 
 .boosts-premium {

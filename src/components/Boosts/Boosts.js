@@ -27,16 +27,26 @@ const Boosts = () => {
                     <span className="task"> <img src={process.env.PUBLIC_URL +
                         "/icons/Монетка золотая право.png"} alt="Coin" className="coin"/> +1,000
                     </span>
-                    <img src={process.env.PUBLIC_URL + "/icons/vk.png"} alt="Coin"
-                         className="icon"/>
+                    <a
+                        href="https://vk.com"
+                        target="_blank"
+                    >
+                        <img src={process.env.PUBLIC_URL + "/icons/vk.png"} alt="Coin"
+                             className="icon"/>
+                    </a>
                 </div>
                 <div className="boosts-text">
                     <span className="task">Оценить публикацию</span>
                     <span className="task"><img src={process.env.PUBLIC_URL +
                         "/icons/Монетка золотая право.png"} alt="Coin" className="coin"/>+1,000
                     </span>
-                    <img src={process.env.PUBLIC_URL + "/icons/ya.png"} alt="Coin"
-                         className="icon"/>
+                    <a
+                        href="https://dzen.ru"
+                        target="_blank"
+                    >
+                        <img src={process.env.PUBLIC_URL + "/icons/ya.png"} alt="Coin"
+                             className="icon"/>
+                    </a>
                 </div>
                 <div className="boosts-text">
                     <span className="task">Оценить публикацию</span>
@@ -45,13 +55,21 @@ const Boosts = () => {
                              className="coin"/>
                         +1,000
                     </span>
-                    <img src={process.env.PUBLIC_URL + "/icons/telegram.png"} alt="Coin"
-                         className="icon"/>
+                    <a
+                        href="https://weba.telegram.org"
+                        target="_blank"
+                    >
+                        <img src={process.env.PUBLIC_URL + "/icons/telegram.png"} alt="Coin"
+                             className="icon"/>
+                    </a>
                 </div>
             </div>
-
+                <div className="line">
+                <img src={process.env.PUBLIC_URL + "/icons/line.png"} alt = "line"/>
+            </div>
             <div className="boosts-premium">
-                <span className="premium-gradient">Premium</span><span className="text-header-premium"> на 12 дней.</span>
+                <span className="premium-gradient">Premium</span><span
+                className="text-header-premium"> на 12 дней.</span>
                 <div className="text-in-premium">Подписка открывает доступ к эксклюзивным фильтрам во вкладке Players</div>
                 <button>
                     <span className="text-button">
