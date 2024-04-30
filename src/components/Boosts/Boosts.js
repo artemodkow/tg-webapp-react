@@ -28,11 +28,11 @@ const Boosts = () => {
                         "/icons/Монетка золотая право.png"} alt="Coin" className="coin"/> +1,000
                     </span>
                     <a
+                        className="icon"
                         href="https://vk.com"
                         target="_blank"
                     >
-                        <img src={process.env.PUBLIC_URL + "/icons/vk.png"} alt="Coin"
-                             className="icon"/>
+                        <img src={process.env.PUBLIC_URL + "/icons/vk.png"} alt="Coin"/>
                     </a>
                 </div>
                 <div className="boosts-text">
@@ -41,11 +41,11 @@ const Boosts = () => {
                         "/icons/Монетка золотая право.png"} alt="Coin" className="coin"/>+1,000
                     </span>
                     <a
+                        className="icon"
                         href="https://dzen.ru"
                         target="_blank"
                     >
-                        <img src={process.env.PUBLIC_URL + "/icons/ya.png"} alt="Coin"
-                             className="icon"/>
+                        <img src={process.env.PUBLIC_URL + "/icons/ya.png"} alt="Coin"/>
                     </a>
                 </div>
                 <div className="boosts-text">
@@ -56,11 +56,11 @@ const Boosts = () => {
                         +1,000
                     </span>
                     <a
+                        className="icon"
                         href="https://weba.telegram.org"
                         target="_blank"
                     >
-                        <img src={process.env.PUBLIC_URL + "/icons/telegram.png"} alt="Coin"
-                             className="icon"/>
+                        <img src={process.env.PUBLIC_URL + "/icons/telegram.png"} alt="Coin"/>
                     </a>
                 </div>
             </div>
