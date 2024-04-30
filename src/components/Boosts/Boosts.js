@@ -51,9 +51,13 @@ const Boosts = () => {
             </div>
 
             <div className="boosts-premium">
-                <p>Premium на 12 дней.</p>
-                <p>Подписка открывает доступ к эксклюзивным фильтрам во вкладке Players</p>
-                <button>Купить за N ₽</button>
+                <span className="premium-gradient">Premium</span><span className="text-header-premium"> на 12 дней.</span>
+                <div className="text-in-premium">Подписка открывает доступ к эксклюзивным фильтрам во вкладке Players</div>
+                <button>
+                    <span className="text-button">
+                        Купить за N ₽
+                    </span>
+                </button>
             </div>
 
             <div className="boosts-earnings">
