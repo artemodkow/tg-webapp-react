@@ -232,7 +232,7 @@
 }
 
 .no-employees-text-referal {
-    font-size: 1em; /* размер текста */
+    font-size: 12px; /* размер текста */
     margin-top: 10px;
     color: gray;
 }
@@ -240,6 +240,7 @@
     position: absolute; /* Абсолютное позиционирование относительно родителя */
     top: 20px; /* Отступ сверху внутри контейнера */
     right: 10px; /* Отступ справа внутри контейнера */
+    margin-right:35px;
 }
 .coins-icon-size{
     width: 100px;
@@ -268,6 +269,8 @@
     outline: none;
 }
 
+
+/*Navigation*/
 .navigation {
     position: fixed;
     bottom: 7px; /* Отступ снизу */
@@ -289,19 +292,19 @@
 }
 
 .nav-icon {
-    width: 20px; /* Устанавливаем ширину иконки */
-    height: 20px; /* Устанавливаем высоту иконки */
+    width: 25px; /* Устанавливаем ширину иконки */
+    height: 25px; /* Устанавливаем высоту иконки */
     margin-bottom: 1px; /* Добавляем отступ между иконкой и текстом */
 }
 
 .navigation button {
     background: none;
     border: none;
+    outline: none;
     color: #fff;
     padding: 10px;
     font-size: 1em;
     cursor: pointer;
-    outline: none;
     display: flex; /* Добавляем flexbox для выравнивания */
     flex-direction: column; /* Ставим иконку над текстом */
     align-items: center; /* Центрируем содержимое кнопки */

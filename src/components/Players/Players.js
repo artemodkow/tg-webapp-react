@@ -43,6 +43,7 @@ const Players = () => {
             <div className="coins-icon-inshare">
                 <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`} alt="Coins" className="coins-icon-size"/>
             </div>
+
             <div className="no-employees-text-referal">
                 Пригласи друзей по реферальной ссылке, чтобы начать зарабатывать.
             </div>

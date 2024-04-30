@@ -23,7 +23,7 @@ const Boosts = () => {
 
             <div className="boosts-tasks">
                 <div className="boosts-text">
-                    <span className="task">Подписаться на группу</span>
+                    <span className="task">Подписаться на группу </span>
                     <span className="task"> <img src={process.env.PUBLIC_URL +
                         "/icons/Монетка золотая право.png"} alt="Coin" className="coin"/> +1,000
                     </span>
@@ -71,17 +71,51 @@ const Boosts = () => {
                 <span className="premium-gradient">Premium</span><span
                 className="text-header-premium"> на 12 дней.</span>
                 <div className="text-in-premium">Подписка открывает доступ к эксклюзивным фильтрам во вкладке Players</div>
-                <button>
-                    <span className="text-button">
+                <a
+                    href="https://weba.telegram.org"
+                    target="_blank"
+                >
+                    <button>
+                        <span className="text-button">
                         Купить за 199 ₽</span>
-                </button>
+                    </button>
+                </a>
+
             </div>
 
             <div className="boosts-earnings">
-                <p>Ускорение заработка</p>
-                <button>2x Купить за N ₽ / 1 час</button>
-                <button>5x Купить за N ₽ / 1 час</button>
-                <button>10x Купить за N ₽ / 1 час</button>
+                <span className="text-in-earn">Ускорение заработка  <img src={process.env.PUBLIC_URL +
+                    "/icons/Монетка золотая фронт.png"} alt="Coin" className="coin-in-earn"/></span>
+                <div>
+                    <div>
+                        <span className="Nx">2x</span>
+                        <a
+                            href="https://weba.telegram.org"
+                            target="_blank"
+                        >
+                            <button>Купить за N ₽ / 1 час</button>
+                        </a>
+
+                    </div>
+                    <div>
+                        <span className="Nx">5x</span>
+                        <a
+                            href="https://weba.telegram.org"
+                            target="_blank"
+                        >
+                            <button>Купить за N ₽ / 1 час</button>
+                        </a>
+                    </div>
+                    <div>
+                        <span className="Nx">10x</span>
+                        <a
+                            href="https://weba.telegram.org"
+                            target="_blank"
+                        >
+                            <button>Купить за N ₽ / 1 час</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );

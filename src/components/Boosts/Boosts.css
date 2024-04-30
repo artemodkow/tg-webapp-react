@@ -39,10 +39,10 @@
     font-size: 19px;
 }
 
-.boosts-header h1 {
-    font-size: 24px;
-}
 
+
+
+/*Задания*/
 .boosts-text {
     color: white;
     padding: 7px;
@@ -51,7 +51,6 @@
     display: flex;
     justify-content: center;
     width: 90%;
-    white-space: nowrap;
     margin-left: 15px;
 }
 
@@ -71,7 +70,7 @@
     display: flex;
     border: none;
     align-items: center;
-    margin-left: 35px;
+    margin-left: 25px;
 }
 .boosts-text .coin {
     width: 15px;
@@ -88,6 +87,11 @@
     width: 100%;
 }
 
+
+
+
+
+/*Premium*/
 .boosts-premium {
     padding: 25px;
     background-color: #2c2c2e;
@@ -110,7 +114,7 @@
 }
 .text-in-premium{
     color: gray;
-    /*margin: auto;*/
+    margin-top: 3px;
     font-size: 12px;
 
 }
@@ -124,29 +128,58 @@
 }
 .text-button{
     font-size: 17px;
+    cursor: pointer;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
+
+
+
+/*Ускорение заработка */
 .boosts-earnings {
-    padding: 15px;
+    padding: 25px;
     background-color: #2c2c2e;
-    border-radius: 20px;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 20px; /* Увеличиваем отступ сверху */
     margin-bottom: 20px;
-    text-align: center;
+}
+.text-in-earn{
+    margin-top: 7px;
+    font-size: 32px;
+}
+.coin-in-earn{
+    width: 20px;
+    height: 20px;
+}
+
+.Nx{
+    background-color: #333333;
+    color: white;
+    padding: 15px 17px;
+    border-radius: 25px;
+    margin-right: 7px;
+    font-weight: bold;
 }
 
 .boosts-earnings button {
-    background-color: #007aff;
+    background-color: #333333;
     color: white;
-    padding: 10px 15px;
+    padding: 14px 28px;
+    font-family: 'SF Pro Display', sans-serif;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     margin-top: 10px;
+    font-size: 15px;
 }
 
+
+
+
+/*Навигация*/
 .boosts-navigation {
     display: flex;
     justify-content: space-around;
-
     bottom: 0;
     width: 100%;
     z-index: 1;
