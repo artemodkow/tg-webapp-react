@@ -52,6 +52,7 @@
     white-space: nowrap;
 }
 
+
 .boosts-text .task {
     background-color: #2c2c2e; /* Adjust color to your preference */
     padding: 10px 10px;
@@ -85,6 +86,7 @@
     border-radius: 30px;
     font-family: 'SF Pro Display', sans-serif;
     margin-bottom: 20px;
+    text-align: center;
 }
 .premium-gradient {
     font-weight: bold;
@@ -100,7 +102,7 @@
 }
 .text-in-premium{
     color: gray;
-    margin: auto;
+    /*margin: auto;*/
     font-size: 12px;
 
 }
