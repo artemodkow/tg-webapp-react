@@ -4,6 +4,9 @@
     font-family: 'SF Pro Display', sans-serif;
     text-align: center;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Убедитесь, что padding не увеличивает ширину */
+    overflow-x: hidden;
 }
 .text-head {
     font-size: 2em;
@@ -44,7 +47,6 @@
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 8px;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -54,25 +56,25 @@
 
 
 .boosts-text .task {
-    background-color: #2c2c2e; /* Adjust color to your preference */
-    padding: 10px 10px;
-    border-radius: 8px; /* Rounded corners for the +1,000 box */
-    margin-right: 15px;
-    font-weight: bold;
-    white-space: nowrap;
+    background-color: #2c2c2e;
+    padding: 7px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 10px;
 }
 .boosts-text .icon {
-    background-color: #2c2c2e; /* Adjust color to your preference */
-    width: 45px;
-    height: 45px;
-    position: static;
-    border-radius: 13px; /* Rounded corners for the +1,000 box */
-    margin-right:15px;
+    background-color: #2c2c2e;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
 }
 .boosts-text .coin {
     width: 15px;
     height: 15px;
-    margin-right: 2px;
+    margin-right: 3px;
 }
 
 
@@ -81,12 +83,12 @@
 }
 
 .boosts-premium {
-    padding: 15px;
+    padding: 25px;
     background-color: #2c2c2e;
     border-radius: 30px;
-    font-family: 'SF Pro Display', sans-serif;
+    width: 100%;
+    margin-top: 20px; /* Увеличиваем отступ сверху */
     margin-bottom: 20px;
-    text-align: center;
 }
 .premium-gradient {
     font-weight: bold;
@@ -121,7 +123,7 @@
 .boosts-earnings {
     padding: 15px;
     background-color: #2c2c2e;
-    border-radius: 8px;
+    border-radius: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -138,7 +140,7 @@
 .boosts-navigation {
     display: flex;
     justify-content: space-around;
-    position: fixed;
+
     bottom: 0;
     width: 100%;
     z-index: 1;

@@ -55,8 +55,7 @@ const Boosts = () => {
                 <div className="text-in-premium">Подписка открывает доступ к эксклюзивным фильтрам во вкладке Players</div>
                 <button>
                     <span className="text-button">
-                        Купить за N ₽
-                    </span>
+                        Купить за 199 ₽</span>
                 </button>
             </div>
 
