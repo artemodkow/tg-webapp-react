@@ -1,15 +1,17 @@
 import React from 'react';
 import './Boosts.css';
 
-const Boosts = () => {
+const Boosts = ({ onBackClick}) => {
     // Здесь должна быть логика или состояние для обработки покупок
-
     return (
         <div className="boosts-container">
             <header className="boosts-header">
-                    <div className="text-head">
-                        Boost
-                    </div>
+                <div className="back-button-container">
+                    <button className="back-button" onClick={onBackClick}></button>
+                </div>
+                <div className="text-head">
+                Boost
+                </div>
             </header>
             <header className="boosts-header">
                 <div className="task-header">

@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import './Rating.css'; // Убедитесь, что CSS файл подключен
 
-const Rating = ({ onBackClick, players, timeLeft }) => {
+const Rating = ({ onBackClick, main, timeLeft }) => {
     // Функция для форматирования числа игроков
     const formatPlayersCount = (count) => {
         return `${count} Игроков`;
     };
+
 
     // Функция для форматирования времени до окончания
     const formatTimeLeft = (hours) => {
@@ -13,7 +14,7 @@ const Rating = ({ onBackClick, players, timeLeft }) => {
     };
 
     // Заглушка данных о игроках, если они не предоставлены
-    const dummyPlayers = players || [
+    const dummyPlayers = main || [
         { id: 1, name: 'Thomas Vien', coins: 1146500, isCurrentUser: false },
         // ... остальные игроки
     ];
@@ -21,7 +22,6 @@ const Rating = ({ onBackClick, players, timeLeft }) => {
     return (
         <div className="rating-container">
             <div className="rating-header">
-                <button className="back-button" onClick={onBackClick}>Назад</button>
                 <div className="players-count">{formatPlayersCount(dummyPlayers.length)}</div>
                 <div className="time-left">{formatTimeLeft(timeLeft)}</div>
             </div>

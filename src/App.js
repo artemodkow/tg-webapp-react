@@ -1,13 +1,13 @@
 // App.js
 import React, {useEffect} from 'react';
-import Players from './components/Players/Players';
+import Main from './components/Main/Main';
 import './App.css';
 
 
 const App = () => {
     return (
         <div className="App">
-            <Players />
+            <Main />
         </div>
     );
 };

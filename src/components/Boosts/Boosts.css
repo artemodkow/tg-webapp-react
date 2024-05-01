@@ -8,6 +8,24 @@
     box-sizing: border-box; /* Убедитесь, что padding не увеличивает ширину */
     overflow-x: hidden;
 }
+.back-button {
+    position: absolute; /* Используем абсолютное позиционирование */
+    top: 20px; /* Отступ сверху */
+    left: 20px; /* Отступ слева */
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex; /* Для выравнивания иконки и текста */
+    align-items: center; /* Центрирование элементов по вертикали */
+    background: transparent; /* Прозрачный фон кнопки */
+    border: none; /* Убрать границу */
+    color: #FFF; /* Цвет текста */
+    cursor: pointer; /* Курсор в виде указателя */
+}
+
+/* Стили для кнопки при наведении (опционально) */
+.back-button:hover {
+    opacity: 0.8; /* Немного затемнить кнопку при наведении */
+}
+
 .text-head {
     font-size: 2em;
     font-weight: bold;

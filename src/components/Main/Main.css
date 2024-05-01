@@ -1,0 +1,337 @@
+.Main-container {
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: 'SF Pro Display', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between; /* Это растянет дочерние элементы по краям */
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 5px -2px 15px rgba(0,0,0,0.5);
+    width: 95%;
+    padding: 15px;
+    background-color: #333333; /* Темный фон */
+    border-radius: 30px; /* Закругленные углы */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/*.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    border: 3px solid #ffffff;
+    object-fit: cover;
+}*/
+
+.user-name {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.user-name-balance {
+    display: flex;
+    flex-direction: column; /* Ставим дочерние элементы в столбик */
+    align-items: center; /* Центрируем дочерние элементы по горизонтали */
+    margin-right: 30px;
+}
+.user-coins {
+    display: flex;
+    align-items: center;
+    font-size: 1em; /* Увеличенный размер шрифта */
+    font-weight: bold;
+    margin-left: 10px;
+}
+.coin-icon-coins {
+    width: 15px;
+    height: 15px;
+    margin-left: 7px;
+}
+
+.user-rating {
+    background: darkslategrey;
+    padding: 5px 10px; /* Добавляем немного внутренних отступов */
+    display: flex;
+    align-items: center;
+    border-radius: 20px; /* Добавляем закругление углов */
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 10px; /* Отступ справа, чтобы не прилипало к краю */
+}
+
+.text-rating {
+    width: 70px;
+    position: absolute;
+    right: 80px;
+    font-size: 0.9em; /* Устанавливаем размер текста */
+}
+.text-rating-gradient {
+    background: linear-gradient(to bottom, #ffcc00, #ff9900);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.rating-icon {
+    width: 24px;
+    height: 24px;
+    outline: none;
+    align-self: center; /* Выравниваем иконку по центру по вертикали */
+}
+
+.big-balance-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.big-balance {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coin-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.referral-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px -2px 15px rgba(0,0,0,0.5);
+    margin: 10px 0;
+    width: 95%; /* или фиксированная ширина, если нужно */
+    max-width: 500px; /* максимальная ширина */
+    background-color: #333;
+    border-radius: 20px;
+}
+
+.referral-text {
+    font-size: 0.9em;
+    color: white;
+    margin-right: 15px;
+}
+
+.share-button {
+    background-color: #2aabd2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-button:hover {
+    background-color: #2295b6;
+}
+
+.employees-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 93%;
+}
+
+.employees-header {
+    font-size: 1.1em;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.employee-item {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.employee-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.employee-name {
+    font-size: 1em;
+}
+.no-employees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 15px;
+    margin: 20px;
+}
+.no-employees-container {
+    background-color: #333;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%; /* или фиксированная ширина, если нужно */
+    max-width: 500px; /* максимальная ширина */
+    box-shadow: 5px -2px 15px rgba(0,0,0,0.5);
+    margin: -20px auto; /* центрирование блока и отступ снизу */
+}
+.no-employees-content {
+    flex-direction: column;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Занимает всю ширину контейнера */
+}
+
+.no-employees-text {
+    font-size: 1.5em; /* размер текста */
+    margin-bottom: 3px; /* отступ до следующего блока */
+    width: 100px;
+    height: 100px;
+}
+
+.no-employees-text-referal {
+    font-size: 12px; /* размер текста */
+    margin-top: 10px;
+    color: gray;
+}
+.coins-icon-inshare {
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    top: 20px; /* Отступ сверху внутри контейнера */
+    right: 10px; /* Отступ справа внутри контейнера */
+    margin-top: 10px;
+    margin-right:35px;
+}
+.coins-icon-size{
+    width: 100px;
+    height: 100px;
+}
+.telegram-share-button {
+    width: 50px; /* размер иконки */
+    height: 50px; /* размер иконки */
+    border: none;
+    /* другие стили для кнопки, если нужно */
+}
+.telegram-share-button-inreferal {
+    position: absolute; /* Абсолютное позиционирование внутри контейнера */
+    margin-right: 100px;
+    width: 40px;
+    height: 40px;
+}
+.share-icon {
+    width: 50px;
+    height: 50px;
+}
+.referral-link-button {
+    margin-top: -30px; /* Выравнивание кнопки слева */
+    margin-bottom: 5px; /* Расстояние до следующего элемента */
+    border: none;
+    outline: none;
+}
+
+
+/*Navigation*/
+.navigation {
+    position: fixed;
+    bottom: 7px; /* Отступ снизу */
+    left: 0;
+    right: 0; /* Добавлено для центровки, если будет максимальная ширина */
+    width: 95%;
+    margin-left: auto; /* Авто-маржины для центровки */
+    margin-right: auto; /* Авто-маржины для центровки */
+    background-color: #333;
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    padding: 7px 0;
+    box-shadow: 0px -2px 10px rgba(0,0,0,0.5);
+    border-radius: 30px; /* Закругление углов */
+    overflow: hidden; /* Для поддержания закругления внутренних элементов */
+    z-index: 1;
+}
+
+.nav-icon {
+    width: 25px; /* Устанавливаем ширину иконки */
+    height: 25px; /* Устанавливаем высоту иконки */
+    margin-bottom: 1px; /* Добавляем отступ между иконкой и текстом */
+}
+
+.navigation button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex; /* Добавляем flexbox для выравнивания */
+    flex-direction: column; /* Ставим иконку над текстом */
+    align-items: center; /* Центрируем содержимое кнопки */
+}
+
+.navigation button.active {
+    border-bottom: 2px solid #ffd700;
+}
+
+.navigation button:hover {
+    opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .user-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+.employee-avatar {
+    width: 30px;
+    height: 30px;
+}
+
+    .navigation button {
+        font-size: 0.8em;
+    }
+}
