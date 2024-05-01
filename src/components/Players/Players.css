@@ -10,21 +10,20 @@
 .trade-header {
     font-size: 24px;
     margin: 20px; /* Можно добавить отступы только для заголовка, если нужно */
-    padding-left: 10px; /* При необходимости */
 }
 
 .player-list {
     list-style-type: none;
     overflow-y: auto;
     max-height: 70vh; /* Ограничиваем максимальную высоту списка */
-    padding: 0;
+
 }
 
 .player-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px;
     background-color: #2c2c2e;
     border-radius: 8px;
     margin: 0 10px 10px 10px; /* Добавляем отступы с боков и между элементами списка */
@@ -37,8 +36,7 @@
 }
 
 .player-info {
-    margin-left: 10px;
-    flex-grow: 1;
+    margin-right: 100px;
 }
 
 .player-name {
@@ -52,8 +50,25 @@
 }
 
 .player-price {
+    background-color: #444444;
+    height: 30px;
+    width: 80px;
     font-size: 16px;
     font-weight: bold;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.coin-price{
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+.go{
+    margin-top: 3px;
 }
 
 @media (max-width: 768px) {
