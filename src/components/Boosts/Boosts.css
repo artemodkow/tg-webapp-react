@@ -92,7 +92,8 @@
     display: flex;
     border: none;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 
 
@@ -158,6 +159,7 @@
 .text-in-earn{
     margin-top: 7px;
     font-size: 28px;
+    margin-right: 3px;
 }
 .coin-in-earn{
     width: 20px;

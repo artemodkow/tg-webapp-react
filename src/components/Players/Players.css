@@ -69,6 +69,7 @@
 }
 .go{
     margin-top: 3px;
+    margin-left: 5px;
 }
 
 @media (max-width: 768px) {
