@@ -15,7 +15,7 @@ const Rating = ({ main, timeLeft }) => {
         { id: 7, name: 'Thomas Vien', coins: 1146500, isCurrentUser: false },
         { id: 8, name: 'Thomas Vien', coins: 1146500, isCurrentUser: false },
         { id: 9, name: 'Thomas Vien', coins: 1146500, isCurrentUser: false },
-        { id: 10, name: 'Thomas Vien', coins: 1146500, isCurrentUser: false },
+        { id: 10, name: 'Thomas Vien', coins: 56500, isCurrentUser: true },
         { id: 11, name: 'Thomas Vien', coins: 1146500, isCurrentUser: false },
         { id: 12, name: 'Thomas Vien', coins: 1146500, isCurrentUser: false },
         // Другие игроки
@@ -48,9 +48,13 @@ const Rating = ({ main, timeLeft }) => {
                     ))}
                 </div>
             </div>
-            {dummyPlayers.length > 6 && ( /* Предполагаем, что на странице отображается 6 игроков */
+            {dummyPlayers.length > 10 && ( /* Предполагаем, что на странице отображается 6 игроков */
                 <div className="current-user-info">
-
+                    <div className="you-rate">
+                        {dummyPlayers.map((player, index) => (
+                            <div></div>
+                        ))}
+                    </div>
                     <div className="player-name">Thomas Vien</div>
 
                     <div className="player-coins">

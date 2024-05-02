@@ -31,7 +31,7 @@
 .cup{
     width: 120px;
     height: 140px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 15px;
     z-index: 2;
 
@@ -41,7 +41,7 @@
 
 .rate-container {
     background-color: #2c2c2e;
-    margin-top: -150px; /* Поднимаем вверх для наложения */
+    margin-top: -130px; /* Поднимаем вверх для наложения */
     border-radius: 25px;
     padding: 20px;
     z-index: 1;
@@ -89,10 +89,6 @@
     margin-right: 5px;
 }
 
-.player-name {
-    flex-grow: 1; /* Заполнение доступного пространства */
-}
-
 .player-coins {
     font-weight: bold;
     margin-left: auto; /* Выравниваем монеты по правому краю */
@@ -106,12 +102,29 @@
 
 .current-user-info {
     background-color: #444;
-    padding: 5px;
-    text-align: center;
+    padding: 25px;
+    display: flex;
+    text-align: left;
     position: fixed;
     bottom: 5px;
-    left: 0;
     width: 100%;
-    border-top: 1px solid #333;
+    left: 0;
     border-radius: 35px;
 }
+
+.you-rate{
+    background-color: #2c2c2e;
+}
+
+.player-name {
+    flex-grow: 1; /* Заполнение доступного пространства */
+    margin-left: 80px;
+}
+
+.player-coins{
+
+}
+.you-tag{
+    margin-left: 20px;
+}
+
