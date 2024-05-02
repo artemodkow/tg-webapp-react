@@ -37,16 +37,21 @@
 
 .player-info {
     margin-right: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .player-name {
     font-size: 16px;
     margin-bottom: 5px;
+    white-space: nowrap;
 }
 
 .player-status {
     font-size: 14px;
     color: #a1a1a1;
+    white-space: nowrap;
+    margin-left: 80px;
 }
 
 .player-price {

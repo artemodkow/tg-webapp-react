@@ -1,14 +1,16 @@
 // App.js
-import React, {useEffect} from 'react';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Main from './components/Main/Main';
 import './App.css';
 
-
 const App = () => {
     return (
-        <div className="App">
-            <Main />
-        </div>
+        <Router>
+            <div className="App">
+                <Main />
+            </div>
+        </Router>
     );
 };
 

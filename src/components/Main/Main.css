@@ -152,42 +152,51 @@
 
 .employees-container {
     display: flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 93%;
-}
-
-.employees-header {
-    font-size: 1.1em;
-    margin-top: -15px;
-    margin-bottom: 15px;
-    white-space: nowrap;
-}
-
-.employee-item {
-    background-color: #333;
-    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Чтобы элементы равномерно распределялись */
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
+
+.employees-header{
+    margin-top: 10px;
+    margin-bottom: -20px;
+    margin-right: 290px;
+}
+.employee-item {
+    background-color: #2c2c2e; /* Чуть светлее фона */
+    border-radius: 10px;
+    width: 170px; /* Ширина каждого блока сотрудника */
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование содержимого */
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 
 .employee-avatar {
-    width: 40px;
-    height: 40px;
+    width: 60px; /* Увеличенный размер */
+    height: 60px;
     border-radius: 50%;
-    background-color: #ccc;
-    margin-right: 10px;
-    object-fit: cover;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .employee-name {
+    color: #fff;
     font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
+
+.employee-rate {
+    color: gray;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
 .no-employees {
     display: flex;
     flex-direction: column;
@@ -210,7 +219,7 @@
     width: 95%; /* или фиксированная ширина, если нужно */
     max-width: 500px; /* максимальная ширина */
     box-shadow: 5px -2px 15px rgba(0,0,0,0.5);
-    margin: -20px auto; /* центрирование блока и отступ снизу */
+    margin: auto; /* центрирование блока и отступ снизу */
 }
 .no-employees-content {
     flex-direction: column;
@@ -269,6 +278,7 @@
     border: none;
     outline: none;
 }
+
 
 
 /*Navigation*/
