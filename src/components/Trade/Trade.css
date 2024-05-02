@@ -26,17 +26,18 @@
     margin-top: 5px;
 }
 
+.header-stats{
+    font-family: 'SF Pro Display', sans-serif;
+    font-size:20px;
+}
+
 .members-list {
     width: 100%;
     padding: 10px;
     font-family: 'SF Pro Display', sans-serif;
+    font-size: 18px;
     border-radius: 8px;
     margin-bottom: 20px;
-}
-
-.header-stats{
-    font-family: 'SF Pro Display', sans-serif;
-    font-size:20px;
 }
 
 .member-item {
@@ -45,7 +46,7 @@
     padding: 15px 15px;
     border-radius: 8px;
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .trade-button {
@@ -59,3 +60,18 @@
     border-radius: 20px;
     width: 100%;
 }
+
+
+.rules-button {
+    background: none; /* Убираем фон */
+    border: none; /* Убираем рамку */
+    padding: 0; /* Убираем отступы */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.rules-link {
+    color: #555;
+}
+
+
