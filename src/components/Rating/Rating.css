@@ -1,8 +1,8 @@
 .rating-container {
     background-color: #121212;
-    color: #fff; /* Белый текст */
-    min-height: 100vh; /* Минимальная высота, чтобы занять весь экран */
-    padding: 20px; /* Отступы для внутреннего содержимого */
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
     width: 100%;
 }
 
@@ -21,34 +21,57 @@
     font-size: 1em;
 }
 
+.cup-section {
+    background: rgb(210,213,22);
+    background: radial-gradient(circle, rgba(210,213,22,1) 0%, #121212 60%);
+    text-align: center; /* Центрирование изображения кубка */
+    height: 330px;
+    width: 100%;
+}
+.cup{
+    width: 120px;
+    height: 140px;
+    margin-top: 30px;
+    margin-left: 15px;
+    z-index: 2;
+
+}
+
+
+
+.rate-container {
+    background-color: #2c2c2e;
+    margin-top: -150px; /* Поднимаем вверх для наложения */
+    border-radius: 25px;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.5); /* Добавляем тень для эффекта глубины */
+}
 .players-count {
     font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .time-left {
     background-color: #333; /* Серый фон */
     color: #fff;
-    padding: 5px 10px; /* Внутренние отступы */
+    padding: 5px 15px; /* Внутренние отступы */
     border-radius: 20px; /* Закругление углов */
-}
-
-.cup-section {
-    background: linear-gradient(to bottom, #ffcc00, #ff9900); /* Градиент для фона с кубком */
-    text-align: center; /* Центрирование изображения кубка */
-    padding: 20px 0; /* Отступ для секции с кубком */
+    margin-top: 10px;
 }
 
 .rating-table {
-    margin-top: 20px; /* Отступ сверху для таблицы */
+    margin-top: 30px; /* Отступ сверху для таблицы */
 }
 
 .player-item {
-    background-color: #333; /* Светлее чем основной фон */
-    margin-bottom: 10px; /* Отступ между элементами списка */
-    padding: 10px; /* Внутренние отступы элементов списка */
-    border-radius: 10px; /* Закругление углов элементов списка */
+    background-color: #333;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
     display: flex;
-    align-items: center; /* Вертикальное центрирование содержимого */
+    align-items: center;
 }
 
 .player-item.current-user {
@@ -56,8 +79,14 @@
 }
 
 .player-ranking {
-    margin-right: 10px; /* Отступ справа от ранга */
+    margin-right: 10px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.player-ranking img {
+    width: 30px; /* Размер медали */
+    margin-right: 5px;
 }
 
 .player-name {
@@ -66,14 +95,23 @@
 
 .player-coins {
     font-weight: bold;
+    margin-left: auto; /* Выравниваем монеты по правому краю */
+}
+.coin_icon{
+    width: 15px;
+    height: 15px;
+    margin-top: 3px;
+    margin-left: 3px;
 }
 
 .current-user-info {
-    position: fixed; /* Фиксированное положение снизу */
-    bottom: 0;
+    background-color: #444;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
     left: 0;
     width: 100%;
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
+    border-top: 1px solid #333;
+    border-radius: 35px;
 }

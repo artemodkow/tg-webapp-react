@@ -40,7 +40,7 @@ const Trade = () => {
             <div>
                 <button className="rules-button">
                     <a
-                        href="https://t.me/share/url?url=https://t.me/sharecointestbot&text"
+                        href="https://t.me/sharecointestbot"
                         target="_blank"
                         className="rules-link"
                     >
