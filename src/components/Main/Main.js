@@ -20,7 +20,7 @@ const Main = () => {
         name: "username",
         coins: "130,412",
         rating: "Rating " + "10,220" + "th",
-        count_slaves: 0
+        count_slaves: 1
         // Предположим, что вы здесь вставляете реальные данные пользователя...
     };
 

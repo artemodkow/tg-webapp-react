@@ -110,10 +110,18 @@
     width: 100%;
     left: 0;
     border-radius: 35px;
+    justify-content: center;
+    align-items: center;
 }
 
 .you-rate{
-    background-color: #2c2c2e;
+    background-color: #333333;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .player-name {
