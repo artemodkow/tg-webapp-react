@@ -21,25 +21,34 @@ const Main = () => {
     };
 
     const employees = [
-        { id: 1, name: 'John Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Developer' },
-        { id: 2, name: 'Jane Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Designer' },
-        { id: 3, name: 'John Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Developer' },
-        { id: 4, name: 'Jane Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Designer' },
-        { id: 3, name: 'John Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Developer' },
-        { id: 4, name: 'Jane Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Designer' },
+        { id: 1, name: 'John Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Developer', rate: '1,000', protected: false, protectionHours: 0 },
+        { id: 2, name: 'Jane De', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Designer', rate: '850', protected: true, protectionHours: 8 },
+        { id: 3, name: 'John Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Developer', rate: '1,000', protected: false, protectionHours: 0 },
+        { id: 4, name: 'Jane Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Designer', rate: '850', protected: true, protectionHours: 8 },
+        // Add similar data for other employees
     ];
+
 
     const handleEmployeeClick = (employee) => {
         setSelectedEmployee(employee);
-        setCurrentPage('employeeDetails');
+        setCurrentPage('employeeDetails');  // Assuming you use conditional rendering to show this component
     };
 
+    const handleUpgrade = (employeeId) => {
+        console.log('Upgrade clicked for:', employeeId);
+        // Additional logic here
+    };
+
+    const handleProtect = (employeeId) => {
+        console.log('Protect clicked for:', employeeId);
+        // Additional logic here
+    };
 
     const renderEmployees = () => (
         <div>
             <div className="employees-container">
                 {employees.map(employee => (
-                    <div key={employee.id} onClick={() => handleEmployeeClick(employee.id)} className="employee-item">
+                    <div key={employee.id} onClick={() => handleEmployeeClick(employee)} className="employee-item">
                         <img src={employee.avatar} alt={employee.name} className="employee-avatar" />
                         <span className="employee-name">{employee.name}</span>
                         <span className="employee-rate">n/min</span> {/* Пример заработка */}
@@ -113,7 +122,7 @@ const Main = () => {
                     </>
                 );
             case 'employeeDetails':
-                return <EmployeeDetails employee={selectedEmployee} />;
+                return <EmployeeDetails employee={selectedEmployee} onUpgrade={handleUpgrade} onProtect={handleProtect} />;
             case 'players':
                 return <Players />;
             case 'boosts':

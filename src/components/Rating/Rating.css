@@ -126,7 +126,7 @@
 
 .player-name {
     flex-grow: 1; /* Заполнение доступного пространства */
-    margin-left: 80px;
+    margin-left: 20px;
 }
 
 .player-coins{

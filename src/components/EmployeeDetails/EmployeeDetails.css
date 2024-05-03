@@ -2,11 +2,13 @@
     background-color: #121212;
     color: white;
     padding: 20px;
+
 }
 
 .employee-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -14,23 +16,35 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.employee-indo{
+
+
 }
 
 .employee-info h1 {
-    margin: 0;
+
     font-size: 1.5em;
 }
 
 .employee-info p {
-    margin: 5px 0;
+        margin: 5px 0;
+}
+
+.line{
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .employee-actions button {
     display: block;
+    margin: auto;
     width: 100%;
+    height: 40px;
     padding: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #333;
     color: white;
     border: none;
