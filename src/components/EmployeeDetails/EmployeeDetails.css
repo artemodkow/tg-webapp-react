@@ -19,9 +19,12 @@
     margin-top: 20px;
 }
 
-.employee-indo{
+.working{
+    color: yellowgreen;
+}
 
-
+.hours-protect{
+    margin-right: 150px;
 }
 
 .employee-info h1 {
@@ -48,10 +51,36 @@
     background-color: #333;
     color: white;
     border: none;
+    white-space: nowrap;
+    justify-content: center;
     border-radius: 10px;
     cursor: pointer;
 }
 
+.coin-icon{
+    width: 15px;
+    height: 15px;
+}
+
 .employee-actions button:hover {
     background-color: #444;
+}
+
+
+.referal-friend{
+    background: #2c2c2e;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; /* Ставим дочерние элементы в столбик */
+    align-items: flex-start;
+}
+
+.level{
+    margin-left: 15px;
+    margin-top: 8px;
+    font-size: 20px;
 }
