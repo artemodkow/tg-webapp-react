@@ -1,5 +1,6 @@
 import React from 'react';
 import './Players.css';
+import { useNavigate } from 'react-router-dom';
 
 const players = [
     // Эти данные должны быть получены из API
@@ -9,6 +10,14 @@ const players = [
 ];
 
 const Trade = () => {
+
+    const navigate = useNavigate();
+
+    const handlePlayerClick = (playerId) => {
+        // Переход на страницу Buy.js с передачей ID игрока в URL
+        navigate(`/buy/${playerId}`);
+    };
+
     return (
         <div className="trade-container">
 
@@ -16,7 +25,7 @@ const Trade = () => {
 
             <ul className="player-list">
                 {players.map(player => (
-                    <li key={player.id} className="player-item">
+                    <li  key={player.id} className="player-item" onClick={() => handlePlayerClick(player.id)}>
 
                         <img src={player.avatar} alt={player.name} className="player-avatar"/>
 

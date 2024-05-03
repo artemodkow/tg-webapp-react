@@ -1,0 +1,73 @@
+.employee-details {
+    background-color: #121212;
+    color: white;
+    padding: 20px;
+}
+
+.employee-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.employee-avatar-large {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee-info h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.status {
+    color: yellowgreen;
+}
+
+.employee-rate-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.employee-details-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.employee-actions button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.employee-actions button:hover {
+    background-color: #444;
+}

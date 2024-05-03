@@ -27,6 +27,7 @@
     background-color: #2c2c2e;
     border-radius: 8px;
     margin: 0 10px 10px 10px; /* Добавляем отступы с боков и между элементами списка */
+    cursor: pointer;
 }
 
 .player-avatar {
