@@ -54,9 +54,19 @@ const Rating = ({ main, timeLeft }) => {
                 <div className="rating-table">
                     {dummyPlayers.map((player, index) => (
                         <div key={player.id} className={`player-item ${player.isCurrentUser ? 'current-user' : ''}`}>
-                            <div className="player-ranking">{index + 1}</div>
+                            <div className="player-ranking">
+                                {index < 3 ?
+                                    <img src={`${process.env.PUBLIC_URL}/icons/medal${index + 1}.png`} alt="Medal"
+                                         className="medal"/>
+                                    : index + 1}
+                            </div>
                             <div className="player-name">{player.name}</div>
-                            <div className="player-coins">{player.coins}</div>
+                            <div className="player-coins">{player.coins}
+                                <span>
+                                <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`} alt="coin icon"
+                                     className="coin_icon"/>
+                            </span>
+                            </div>
                         </div>
                     ))}
                 </div>

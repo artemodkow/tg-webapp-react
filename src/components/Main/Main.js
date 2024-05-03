@@ -4,12 +4,14 @@ import Players from '../Players/Players';
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
 import Rating from "../Rating/Rating";
+import EmployeeDetails from '../EmployeeDetails/EmployeeDetails';
 import { useNavigate } from 'react-router-dom';
 import players from "../Players/Players";  // Добавлено для навигации
 
 const Main = () => {
     const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState('main');
+    const [selectedEmployee, setSelectedEmployee] = useState(null);
 
     const userData = {
         name: "username",
@@ -27,9 +29,11 @@ const Main = () => {
         { id: 4, name: 'Jane Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Designer' },
     ];
 
-    const handleEmployeeClick = (employeeId) => {
-        navigate(`/employee/${employeeId}`);
+    const handleEmployeeClick = (employee) => {
+        setSelectedEmployee(employee);
+        setCurrentPage('employeeDetails');
     };
+
 
     const renderEmployees = () => (
         <div>
@@ -108,6 +112,8 @@ const Main = () => {
                         {employees.length > 0 ? renderEmployees() : renderNoEmployees()}
                     </>
                 );
+            case 'employeeDetails':
+                return <EmployeeDetails employee={selectedEmployee} />;
             case 'players':
                 return <Players />;
             case 'boosts':
