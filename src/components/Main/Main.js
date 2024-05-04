@@ -124,21 +124,30 @@ const Main = () => {
                             <div className="referral-text">
                                 Если другие игроки перейдут по вашей ссылке, они станут вашими работниками.
                             </div>
+                            <a
+                                href="https://t.me/share/url?url=https://t.me/sharecointestbot&text=Ты стал моим рабом!!! Заходи выкупиться"
+                                target="_blank"
+                                className="telegram-share-button"
+                            >
+                                <img src={`${process.env.PUBLIC_URL}/icons/share.png`} alt="Coin Icon"
+                                     className="telegram-share-button"/>
+                            </a>
                         </div>
                         <div className="employees-header">Мои работники: {employees.length}</div>
                         {employees.length > 0 ? renderEmployees() : renderNoEmployees()}
                     </>
                 );
             case 'employeeDetails':
-                return <EmployeeDetails employee={selectedEmployee} onUpgrade={handleUpgrade} onProtect={handleProtect} />;
+                return <EmployeeDetails employee={selectedEmployee} onUpgrade={handleUpgrade}
+                                        onProtect={handleProtect}/>;
             case 'players':
-                return <Players />;
+                return <Players/>;
             case 'boosts':
-                return <Boosts />;
+                return <Boosts/>;
             case 'trade':
-                return <Trade />;
+                return <Trade/>;
             case 'rating':
-                return <Rating />;
+                return <Rating/>;
             default:
                 return null;
         }
@@ -148,7 +157,7 @@ const Main = () => {
         <div className="Main-container">
             {currentPage !== 'main' && (
                 <button className="back-button" onClick={() => setCurrentPage('main')}>
-                    <img src={`${process.env.PUBLIC_URL}/icons/back.png`} alt="Back" /> Назад
+                    <img src={`${process.env.PUBLIC_URL}/icons/back.png`} alt="Back"/> Назад
                 </button>
             )}
             {currentPage !== 'rating' && (
