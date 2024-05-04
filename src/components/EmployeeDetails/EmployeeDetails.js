@@ -30,12 +30,12 @@ const EmployeeDetails = ({employee, onUpgrade, onProtect }) => {
             <div className="employee-actions">
                 <button onClick={() => onUpgrade(employee.id)}>Прокачать за N
                     <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`} alt="Coins"
-                         className="coin-icon"/>
+                         className="coin-icon-emp"/>
                 </button>
                 <button onClick={() => onProtect(employee.id)}>Защитить за N
                     <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`} alt="Coins"
-                         className="coin-icon"/>
-                    на 8 часов
+                         className="coin-icon-emp"/>
+                        на 8 часов
                 </button>
             </div>
 

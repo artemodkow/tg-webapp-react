@@ -48,6 +48,7 @@
     height: 40px;
     padding: 10px;
     margin-bottom: 10px;
+    font-size: 17px;
     background-color: #333;
     color: white;
     border: none;
@@ -57,9 +58,11 @@
     cursor: pointer;
 }
 
-.coin-icon{
+.coin-icon-emp{
     width: 15px;
     height: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .employee-actions button:hover {

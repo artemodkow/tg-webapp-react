@@ -47,16 +47,24 @@ const Main = () => {
     const renderEmployees = () => (
         <div>
             <div className="employees-container">
-                {employees.map(employee => (
-                    <div key={employee.id} onClick={() => handleEmployeeClick(employee)} className="employee-item">
-                        <img src={employee.avatar} alt={employee.name} className="employee-avatar" />
-                        <span className="employee-name">{employee.name}</span>
-                        <span className="employee-rate">n/min</span> {/* Пример заработка */}
-                    </div>
-                ))}
+                <div className="employee-row">
+                    {employees.map(employee => (
+                        <div key={employee.id} onClick={() => handleEmployeeClick(employee)} className="employee-item">
+                            <div>
+                                <img src={employee.avatar} alt={employee.name} className="employee-avatar"/>
+                            </div>
+                            <div>
+                                <span className="employee-name">{employee.name}</span>
+                            </div>
+
+                            <span className="employee-rate">n/min</span> {/* Пример заработка */}
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
+
 
     const renderNoEmployees = () => (
         <div className="no-employees-container">
