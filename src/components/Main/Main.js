@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import './Main.css';
-import Players from '../Players/Players';
+import Players from '../Players/Players'; // Проверьте путь к компоненту
 import Boosts from '../Boosts/Boosts';
 import Trade from '../Trade/Trade';
 import Rating from "../Rating/Rating";
 import EmployeeDetails from '../EmployeeDetails/EmployeeDetails';
-import { useNavigate } from 'react-router-dom';
-import players from "../Players/Players";  // Добавлено для навигации
+import Buy from '../Buy/Buy'; // Проверьте путь к компоненту
 
 const Main = () => {
-    const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState('main');
     const [selectedEmployee, setSelectedEmployee] = useState(null);
+    const [selectedPlayerId, setSelectedPlayerId] = useState(null);
 
     const userData = {
         name: "username",
@@ -25,66 +24,53 @@ const Main = () => {
         { id: 2, name: 'Jane De', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Designer', rate: '850', protected: true, protectionHours: 8 },
         { id: 3, name: 'John Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Developer', rate: '1,000', protected: false, protectionHours: 0 },
         { id: 4, name: 'Jane Doe', avatar: process.env.PUBLIC_URL + "/icons/avatar.png", job: 'Designer', rate: '850', protected: true, protectionHours: 8 },
-        // Add similar data for other employees
     ];
-
 
     const handleEmployeeClick = (employee) => {
         setSelectedEmployee(employee);
-        setCurrentPage('employeeDetails');  // Assuming you use conditional rendering to show this component
+        setCurrentPage('employeeDetails');
     };
 
     const handleUpgrade = (employeeId) => {
         console.log('Upgrade clicked for:', employeeId);
-        // Additional logic here
     };
 
     const handleProtect = (employeeId) => {
         console.log('Protect clicked for:', employeeId);
-        // Additional logic here
+    };
+
+    const handleBuyPlayer = (playerId) => {
+        setSelectedPlayerId(playerId);
+        setCurrentPage('buy');
     };
 
     const renderEmployees = () => (
-        <div>
-            <div className="employees-container">
-                <div className="employee-row">
-                    {employees.map(employee => (
-                        <div key={employee.id} onClick={() => handleEmployeeClick(employee)} className="employee-item">
-                            <div>
-                                <img src={employee.avatar} alt={employee.name} className="employee-avatar"/>
-                            </div>
-                            <div>
-                                <span className="employee-name">{employee.name}</span>
-                            </div>
-
-                            <span className="employee-rate">n/min</span> {/* Пример заработка */}
+        <div className="employees-container">
+            <div className="employee-row">
+                {employees.map(employee => (
+                    <div key={employee.id} onClick={() => handleEmployeeClick(employee)} className="employee-item">
+                        <img src={employee.avatar} alt={employee.name} className="employee-avatar"/>
+                        <div className="employee-info">
+                            <span className="employee-name">{employee.name}</span>
+                            <span className="employee-rate">
+                                <div>
+                                    {employee.rate}
+                                </div>
+                                n/min</span>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
         </div>
     );
 
-
     const renderNoEmployees = () => (
         <div className="no-employees-container">
-            <div className="no-employees-text">
-                У вас нет работников.
-            </div>
+            У вас нет работников.
             <div className="referral-link-button">
-                <a
-                    href="https://t.me/share/url?url=https://t.me/sharecointestbot&text=Ты стал моим рабом!!! Заходи выкупиться"
-                    target="_blank"
-                    className="telegram-share-button"
-                >
+                <a href="https://t.me/share/url?url=https://t.me/sharecointestbot&text=Ты стал моим рабом!!! Заходи выкупиться" target="_blank" className="telegram-share-button">
                     <img src={`${process.env.PUBLIC_URL}/icons/share.png`} alt="share button"/>
                 </a>
-            </div>
-            <div className="coins-icon-inshare">
-                <img src={`${process.env.PUBLIC_URL}/icons/Монетка золотая право.png`} alt="Coins" className="coins-icon-size"/>
-            </div>
-            <div className="no-employees-text-referal">
-                Пригласи друзей по реферальной ссылке, чтобы начать зарабатывать.
             </div>
         </div>
     );
@@ -138,16 +124,17 @@ const Main = () => {
                     </>
                 );
             case 'employeeDetails':
-                return <EmployeeDetails employee={selectedEmployee} onUpgrade={handleUpgrade}
-                                        onProtect={handleProtect}/>;
+                return <EmployeeDetails employee={selectedEmployee} onUpgrade={handleUpgrade} onProtect={handleProtect} />;
+            case 'buy':
+                return <Buy playerId={selectedPlayerId} />;
             case 'players':
-                return <Players/>;
+                return <Players onBuyPlayer={handleBuyPlayer} />;
             case 'boosts':
-                return <Boosts/>;
+                return <Boosts />;
             case 'trade':
-                return <Trade/>;
+                return <Trade />;
             case 'rating':
-                return <Rating/>;
+                return <Rating />;
             default:
                 return null;
         }
@@ -179,3 +166,4 @@ const Main = () => {
 };
 
 export default Main;
+

@@ -38,6 +38,28 @@
     flex-direction: column;
     margin: 20px 0;
 }
+.status{
+    color:greenyellow;
+}
+
+.price{
+    background-color: #2c2c2e;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 110px;
+    white-space: nowrap;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.coin-buy{
+    width: 20px;
+    height: 20px;
+}
 
 .detail-item {
     display: flex;
@@ -47,13 +69,42 @@
 }
 
 .buy-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    padding: 15px 100px;
     border: none;
-    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    border-radius: 20px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+.line-buy{
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+.info-buy{
+    background-color: #2c2c2e;
+    height: 55px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+.in-info-buy{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.icon-info-buy{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    margin-top: 10px;
+    right: 90px;
 }
 
 .employee-actions button {
